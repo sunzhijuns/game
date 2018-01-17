@@ -15,7 +15,6 @@ public:
     virtual ~AppDelegate();
 
     virtual void initGLContextAttrs();
-    void initSound();
 
     /**
     @brief    Implement Director and Scene init code here.
