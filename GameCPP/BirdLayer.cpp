@@ -172,7 +172,7 @@ void BirdLayer::birdRun()
 	Point birdPosition = bird->getPosition();
 	//地面尺寸
 	Size floorSize = floor->getContentSize();
-	float time = (birdPosition.y-240)/135;
+	float time = (birdPosition.y-240)/40;
 	bird->runAction(Sequence::create(MoveTo::create(time, Point(birdPosition.x, floorSize.height+40)), NULL));
 }
 
@@ -606,7 +606,7 @@ bool BirdLayer::onTouchBegan(Touch* touch, Event* event)
 		{
 			wingSound();
 		}
-		int move = 105;
+		int move = 100;
 		auto action = Spawn::createWithTwoActions(MoveTo::create(0.2, Point(birdPosition.x, birdPosition.y + move)), RotateTo::create(0, -30));
 		bird->stopAllActions();
 		bird->runAction(RepeatForever::create(animAc));
