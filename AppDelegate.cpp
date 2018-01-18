@@ -1,6 +1,5 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
-#include "GameCPP/GameSceneManager.h"
+#include "PianoCPP/GameSceneManager.h"
 #include "SimpleAudioEngine.h"
 
 // #define USE_AUDIO_ENGINE 1
@@ -20,10 +19,10 @@ using namespace CocosDenshion;
 
 USING_NS_CC;
 
-static cocos2d::Size designResolutionSize = cocos2d::Size(540, 960);
-static cocos2d::Size smallResolutionSize = cocos2d::Size(540, 960);
-static cocos2d::Size mediumResolutionSize = cocos2d::Size(540, 960);
-static cocos2d::Size largeResolutionSize = cocos2d::Size(540, 960);
+static cocos2d::Size designResolutionSize = cocos2d::Size(960, 540);
+static cocos2d::Size smallResolutionSize = cocos2d::Size(960, 540);
+static cocos2d::Size mediumResolutionSize = cocos2d::Size(960, 540);
+static cocos2d::Size largeResolutionSize = cocos2d::Size(960, 540);
 
 AppDelegate::AppDelegate()
 {
@@ -46,20 +45,6 @@ void AppDelegate::initGLContextAttrs()
     GLContextAttrs glContextAttrs = {8, 8, 8, 8, 24, 8};
 
     GLView::setGLContextAttrs(glContextAttrs);
-}
-void AppDelegate::initSound(){							//加载音乐的方法
-    CocosDenshion::SimpleAudioEngine::getInstance()->	//加载背景音乐
-            preloadBackgroundMusic("sounds/playscene.mp3");
-    CocosDenshion::SimpleAudioEngine::getInstance()->	//加载小鸟跳跃音效
-            preloadEffect("sounds/sfx_wing.ogg");
-    CocosDenshion::SimpleAudioEngine::getInstance()->	//加载得分音效
-            preloadEffect("sounds/sfx_point.ogg");
-    CocosDenshion::SimpleAudioEngine::getInstance()->	//加载碰撞音效
-            preloadEffect("sounds/sfx_hit.ogg");
-    CocosDenshion::SimpleAudioEngine::getInstance()->	//加载死亡下落音效
-            preloadEffect("sounds/sfx_die.ogg");
-    CocosDenshion::SimpleAudioEngine::getInstance()->	//加载夹水果音效
-            preloadEffect("sounds/eat.wav");
 }
 
 // if you want to use the package manager to install more packages,  
@@ -89,7 +74,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0f / 60);
 
     // Set the design resolution
-    glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
+    glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::SHOW_ALL);
     auto frameSize = glview->getFrameSize();
     // if the frame's height is larger than the height of medium size.
     if (frameSize.height > mediumResolutionSize.height)
@@ -114,11 +99,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     //创建欢迎场景
     auto scene = new GameSceneManager();
-    scene->createMainScene();
+    scene->createLogoScene();
     //跌换到欢迎场景显示
-    director->runWithScene(scene->mainScene);
+    director->runWithScene(scene->logoScene);
     //加载音乐
-    initSound();
 
     return true;
 }
