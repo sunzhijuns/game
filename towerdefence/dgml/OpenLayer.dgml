@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Bn" Bounds="75.47,40,50,25.24" Label="bn" />
+    <Node Id="Bn--Logo" Bounds="230.94,55.24,78.6666666666665,25.24" Label="bn -- logo" />
+    <Node Id="CallFunc--ToBeginLayer" Bounds="20,205.72,160.94,25.24" Label="CallFunc -- toBeginLayer" />
+    <Node Id="FadeIn" Bounds="71.2633333333333,95.24,58.4133333333334,25.24" Label="FadeIn" />
+    <Node Id="FadeOut" Bounds="65.9016666666666,150.48,69.1366666666668,25.24" />
+    <Node Id="RunAction" Bounds="0,0,200.94,250.96" Group="Expanded" Label="runAction" />
+    <Node Id="This" Bounds="245.273333333333,0,50,25.24" Label="this" />
+  </Nodes>
+  <Links>
+    <Link Source="Bn" Target="FadeIn" Bounds="100.470001220703,65.2399978637695,0,21" />
+    <Link Source="FadeIn" Target="FadeOut" Bounds="100.470001220703,120.480003356934,0,20.9999923706055" />
+    <Link Source="FadeOut" Target="CallFunc--ToBeginLayer" Bounds="100.470001220703,175.720001220703,0,21" />
+    <Link Source="RunAction" Target="Bn" Category="Contains" />
+    <Link Source="RunAction" Target="CallFunc--ToBeginLayer" Category="Contains" />
+    <Link Source="RunAction" Target="FadeIn" Category="Contains" />
+    <Link Source="RunAction" Target="FadeOut" Category="Contains" />
+    <Link Source="This" Target="Bn--Logo" Bounds="270.273345947266,25.2399997711182,0,21.0000019073486" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

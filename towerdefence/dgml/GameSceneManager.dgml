@@ -1,12 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="切换" Bounds="-508.8,-258.4,50,25.24" Label="this" UseManualLocation="True" />
+    <Node Id="CreateScene" Bounds="-144.344827880859,-277.279891516113,122.18,140.4803" Group="Expanded" Label="createScene" UseManualLocation="True" />
+    <Node Id="OpenLayer" Bounds="-124.344827880859,-182.039700622559,82.1800000000001,25.24" Label="OpenLayer" />
+    <Node Id="Scene" Bounds="-109.546448771159,-237.279782409668,52.5833333333333,25.24" Label="scene" />
+    <Node Id="切换" Bounds="-272.255110864755,-314.119900512695,50,25.24" Label="this" UseManualLocation="True" />
   </Nodes>
-  <Links />
+  <Links>
+    <Link Source="CreateScene" Target="OpenLayer" Category="Contains" />
+    <Link Source="CreateScene" Target="Scene" Category="Contains" />
+    <Link Source="Scene" Target="OpenLayer" Bounds="-83.2548038612817,-212.039787701416,1.7402363297947E-05,21.0001000000031" />
+    <Link Source="切换" Target="CreateScene" Bounds="-225.344449266474,-288.879908447266,73.2007549144861,42.1618549142985" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
   <Properties>
     <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
     <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
     <Property Id="UseManualLocation" DataType="System.Boolean" />
   </Properties>
 </DirectedGraph>
