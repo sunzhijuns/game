@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="切换" Bounds="-508.8,-258.4,50,25.24" UseManualLocation="True" />
+    <Node Id="切换" Bounds="-508.8,-258.4,50,25.24" Label="this" UseManualLocation="True" />
   </Nodes>
   <Links />
   <Properties>
     <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
     <Property Id="UseManualLocation" DataType="System.Boolean" />
   </Properties>
 </DirectedGraph>
