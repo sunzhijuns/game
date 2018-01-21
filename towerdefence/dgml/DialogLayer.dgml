@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="DialogLayer::homeSence" Bounds="318.997440697976,466.7128729664,259.263333333333,255.72" Group="Expanded" Label="DialogLayer::homeSence" UseManualLocation="True" />
+    <Node Id="DialogLayer::menuCallbackContinueGame" Bounds="-17.5259181207845,301.268205906195,280.433333333333,255.720597279619" Group="Expanded" UseManualLocation="True" />
+    <Node Id="Director-&gt;resume();" Bounds="56.5157428238362,456.508594504828,132.35,25.24" Label="director-&gt;resume();" />
+    <Node Id="IsMusic==False" Bounds="687.298103670336,597.561566764251,205.013333333333,140.4803" Group="Expanded" Label="isMusic == false" />
+    <Node Id="IsPartical--FalseOrFalse" Bounds="828.769938785945,80.0376884947724,172.12,85.2402000000001" Group="Expanded" Label="isMusic -- false or false" />
+    <Node Id="IsParticle--FalseOrTrue" Bounds="828.769918033992,195.277991534323,177.39,85.2402000000001" Group="Expanded" Label="isParticle -- false or true" />
+    <Node Id="IsParticle=!isParticle;X_1-&gt;setVisible(!isParticle);" Bounds="993.036909179687,527.656787483237,176.34,40.48" Label="isParticle=!isParticle;&#xD;&#xA; x_1-&gt;setVisible(!isParticle);" />
+    <Node Id="M_pMenu" Bounds="596.207112984345,302.551794093804,77.6066666666667,25.24" Label="m_pMenu" UseManualLocation="True" />
+    <Node Id="Node:setVisible()" Bounds="808.769918033992,40.0375884947723,217.39,260.4807" Group="Expanded" Label="node:setVisible()" UseManualLocation="True" />
+    <Node Id="PDirector-&gt;resume();" Bounds="377.890758772521,621.953239632938,141.476666666667,25.24" Label="pDirector-&gt;resume();" />
+    <Node Id="Par" Bounds="838.691310854525,345.72,50,25.24" Label="par" UseManualLocation="True" />
+    <Node Id="Parused" Bounds="951.575181477865,372.416387483237,259.263333333333,215.7205" Group="Expanded" Label="parused" UseManualLocation="True" />
+    <Node Id="PauseBackgroundMusic()" Bounds="707.298103670336,692.801766765051,165.013333333333,25.24" Label="pauseBackgroundMusic()" />
+    <Node Id="Plabel--Plabel.png" Bounds="366.562112984345,186.179697771796,198.896666666667,25.24" Label="plabel -- 暂停游戏 -- plabel.png" UseManualLocation="True" />
+    <Node Id="PlayEffect" Bounds="338.997440697976,506.7129729664,219.263333333333,85.2402000000001" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect1" Bounds="680.173103670336,482.321266765051,219.263333333333,85.2402" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect2" Bounds="971.575181477865,412.416487483237,219.263333333333,85.2402" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect3" Bounds="13.0590818792155,341.268305906195,219.263333333333,85.2402" Group="Expanded" Label="playEffect" />
+    <Node Id="PreloadEffect" Bounds="56.0829379865099,177.64886729799,219.263333333333,85.3161901734278" Group="Expanded" Label="preloadEffect" UseManualLocation="True" />
+    <Node Id="Resume" Bounds="391.039609879341,335.204449127529,62.3933333333334,25.24" Label="resume" UseManualLocation="True" />
+    <Node Id="ResumeBackgroundMusic()" Bounds="36.0140952306559,511.748737327094,173.353333333333,25.24" Label="resumeBackgroundMusic()" />
+    <Node Id="SaveExit" Bounds="529.282626935215,375.163542442918,65.64,25.24" Label="saveExit" UseManualLocation="True" />
+    <Node Id="Sound" Bounds="663.836313467608,381.4728729664,55.6466666666666,25.24" Label="sound" UseManualLocation="True" />
+    <Node Id="Sound/sf_button_press.mp3" Bounds="76.0829721822767,217.724957471417,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp31" Bounds="358.997440697977,546.713249398563,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp32" Bounds="700.173103670336,522.321366765051,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp33" Bounds="991.575181477865,452.416587483237,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp34" Bounds="33.0590818792155,381.268405906195,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sounded" Bounds="660.173121610667,442.321166765051,259.263333333333,315.7207999992" Group="Expanded" Label="sounded" UseManualLocation="True" />
+    <Node Id="This" Bounds="647.866429458572,217.321384697726,50,25.24" Label="this" UseManualLocation="True" />
+    <Node Id="ToBeginLayer()" Bounds="397.004061588276,677.193229867313,103.25,25.24" Label="toBeginLayer()" />
+    <Node Id="X_1--X.png" Bounds="873.621584700659,235.278091534323,87.6866666666667,25.24" Label="x_1 -- x.png" />
+    <Node Id="X_2--X.png" Bounds="870.986605452612,120.037788494772,87.6866666666667,25.24" Label="x_2 -- x.png" />
+    <Node Id="X_2-&gt;setVisible(true);" Bounds="719.15143700367,637.561666764251,141.306666666667,25.24" Label="x_2-&gt;setVisible(true);" />
+  </Nodes>
+  <Links>
+    <Link Source="DialogLayer::homeSence" Target="PDirector-&gt;resume();" Category="Contains" />
+    <Link Source="DialogLayer::homeSence" Target="PlayEffect" Category="Contains" />
+    <Link Source="DialogLayer::homeSence" Target="ToBeginLayer()" Category="Contains" />
+    <Link Source="DialogLayer::menuCallbackContinueGame" Target="Director-&gt;resume();" Category="Contains" />
+    <Link Source="DialogLayer::menuCallbackContinueGame" Target="PlayEffect3" Category="Contains" />
+    <Link Source="DialogLayer::menuCallbackContinueGame" Target="ResumeBackgroundMusic()" Category="Contains" />
+    <Link Source="Director-&gt;resume();" Target="ResumeBackgroundMusic()" Bounds="122.690742492676,481.748565673828,0,21" />
+    <Link Source="IsMusic==False" Target="PauseBackgroundMusic()" Category="Contains" />
+    <Link Source="IsMusic==False" Target="X_2-&gt;setVisible(true);" Category="Contains" />
+    <Link Source="IsPartical--FalseOrFalse" Target="X_2--X.png" Category="Contains" />
+    <Link Source="IsParticle--FalseOrTrue" Target="X_1--X.png" Category="Contains" />
+    <Link Source="M_pMenu" Target="Par" Bounds="673.813770345052,322.496721347255,156.033766974607,29.4545641913259" />
+    <Link Source="M_pMenu" Target="Resume" Bounds="462.328792634814,321.126617474464,133.878311043571,20.5451699841544" />
+    <Link Source="M_pMenu" Target="SaveExit" Bounds="581.150958982594,327.791798706055,41.1880160805144,41.0207413354613" />
+    <Link Source="M_pMenu" Target="Sound" Bounds="644.069018493267,327.791798706055,33.2839148023959,46.3696226237899" />
+    <Link Source="Node:setVisible()" Target="IsPartical--FalseOrFalse" Category="Contains" />
+    <Link Source="Node:setVisible()" Target="IsParticle--FalseOrTrue" Category="Contains" />
+    <Link Source="PDirector-&gt;resume();" Target="ToBeginLayer()" Bounds="448.629089355469,647.192810058594,0,20.9999389648438" />
+    <Link Source="Par" Target="Parused" Bounds="886.142539803268,370.925872842969,57.5820571526186,32.2798262416237" />
+    <Link Source="Parused" Target="IsParticle=!isParticle;X_1-&gt;setVisible(!isParticle);" Category="Contains" />
+    <Link Source="Parused" Target="PlayEffect2" Category="Contains" />
+    <Link Source="PlayEffect" Target="PDirector-&gt;resume();" Bounds="448.629089355469,591.952941894531,0,20.9999389648438" />
+    <Link Source="PlayEffect" Target="Sound/sf_button_press.mp31" Category="Contains" />
+    <Link Source="PlayEffect1" Target="IsMusic==False" Bounds="789.804809570313,567.561279296875,0,21" />
+    <Link Source="PlayEffect1" Target="Sound/sf_button_press.mp32" Category="Contains" />
+    <Link Source="PlayEffect2" Target="IsParticle=!isParticle;X_1-&gt;setVisible(!isParticle);" Bounds="1081.20690917969,497.656707763672,0,21.0000305175781" />
+    <Link Source="PlayEffect2" Target="Sound/sf_button_press.mp33" Category="Contains" />
+    <Link Source="PlayEffect3" Target="Director-&gt;resume();" Bounds="122.690742492676,426.508575439453,0,21" />
+    <Link Source="PlayEffect3" Target="Sound/sf_button_press.mp34" Category="Contains" />
+    <Link Source="PreloadEffect" Target="Sound/sf_button_press.mp3" Category="Contains" />
+    <Link Source="Resume" Target="DialogLayer::menuCallbackContinueGame" Bounds="271.593155152334,356.291993981813,119.446445270843,32.4207173310474" />
+    <Link Source="SaveExit" Target="DialogLayer::homeSence" Bounds="523.120581782945,400.403538818359,32.0569247928881,58.419195294819" />
+    <Link Source="Sound" Target="Sounded" Bounds="697.669631171167,406.712864990234,13.0880112107235,27.4826745541873" />
+    <Link Source="Sounded" Target="IsMusic==False" Category="Contains" />
+    <Link Source="Sounded" Target="PlayEffect1" Category="Contains" />
+    <Link Source="This" Target="M_pMenu" Bounds="644.269046171858,242.561383361816,22.9920983364607,51.7652460809421" />
+    <Link Source="This" Target="Node:setVisible()" Bounds="697.866455078125,198.924045721383,102.159823384987,24.9192366807998" />
+    <Link Source="This" Target="Plabel--Plabel.png" Bounds="558.737444555344,212.759535568246,89.129010522781,13.4181579756035" />
+    <Link Source="X_2-&gt;setVisible(true);" Target="PauseBackgroundMusic()" Bounds="789.804809570313,662.80126953125,0,21" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>
