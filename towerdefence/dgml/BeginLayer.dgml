@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="BeginLayer::helpSence" Bounds="870,165.72,259.263333333333,200.48" Group="Expanded" />
+    <Node Id="BeginLayer::oneMode" Bounds="40,245.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="BeginLayer::oneMode1" Bounds="0,165.72,259.263333333333,200.48" Group="Expanded" Label="BeginLayer::oneMode" />
+    <Node Id="BeginLayer::setSence" Bounds="580,165.72,259.263333333333,200.48" Group="Expanded" />
+    <Node Id="BeginLayer::twoMode" Bounds="290,165.72,259.263333333333,200.48" Group="Expanded" />
+    <Node Id="Director-&gt;end()" Bounds="365.158333333333,320.96,108.946666666667,25.24" Label="director-&gt;end()" />
+    <Node Id="Help" Bounds="785.363333333333,110.48,86.5366666666665,25.24" Label="help -- 帮助" />
+    <Node Id="Init--PreloadEffect" Bounds="0,396.2,219.263333333333,85.24" Group="Expanded" Label="init -- preloadEffect" />
+    <Node Id="OnePlayer" Bounds="342.518333333333,110.48,142.226666666667,25.24" Label="onePlayer -- 开始游戏" />
+    <Node Id="PMenu" Bounds="679.14,55.24,60.9833333333333,25.24" Label="pMenu" />
+    <Node Id="PlayEffect" Bounds="20,205.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect1" Bounds="310,205.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect2" Bounds="600,205.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect3" Bounds="890,205.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="Set" Bounds="664.475,110.48,90.3133333333333,25.24" Label="set -- 最高分" />
+    <Node Id="Sound/sf_button_press.mp3" Bounds="20,436.2,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp31" Bounds="330,245.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp32" Bounds="620,245.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp33" Bounds="910,245.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sprite--Background" Bounds="510.155,55.24,138.953333333333,25.24" Label="sprite -- background" />
+    <Node Id="This" Bounds="684.631666666667,0,50,25.24" Label="this" />
+    <Node Id="ToChooseLayer" Bounds="72.7883333333333,320.96,113.686666666667,25.24" Label="toChooseLayer()" />
+    <Node Id="ToHelpLayer()" Bounds="651.826666666667,320.96,115.61,25.24" Label="toAchieveLayer()" />
+    <Node Id="ToHelpLayer()1" Bounds="950.835,320.96,97.5933333333334,25.24" Label="toHelpLayer()" />
+    <Node Id="TwoPlayer" Bounds="515.648333333333,110.48,117.966666666667,25.24" Label="twoPlayer -- 退出" />
+  </Nodes>
+  <Links>
+    <Link Source="BeginLayer::helpSence" Target="PlayEffect3" Category="Contains" />
+    <Link Source="BeginLayer::helpSence" Target="ToHelpLayer()1" Category="Contains" />
+    <Link Source="BeginLayer::oneMode1" Target="PlayEffect" Category="Contains" />
+    <Link Source="BeginLayer::oneMode1" Target="ToChooseLayer" Category="Contains" />
+    <Link Source="BeginLayer::setSence" Target="PlayEffect2" Category="Contains" />
+    <Link Source="BeginLayer::setSence" Target="ToHelpLayer()" Category="Contains" />
+    <Link Source="BeginLayer::twoMode" Target="Director-&gt;end()" Category="Contains" />
+    <Link Source="BeginLayer::twoMode" Target="PlayEffect1" Category="Contains" />
+    <Link Source="Help" Target="BeginLayer::helpSence" Bounds="843.737487792969,135.720001220703,29.00244140625,24.2297668457031" />
+    <Link Source="Init--PreloadEffect" Target="Sound/sf_button_press.mp3" Category="Contains" />
+    <Link Source="OnePlayer" Target="BeginLayer::oneMode1" Bounds="267.122955322266,135.720001220703,99.2323303222656,38.7818756103516" />
+    <Link Source="PMenu" Target="Help" Bounds="736.818115234375,80.4800033569336,56.4637451171875,26.2105560302734" />
+    <Link Source="PMenu" Target="OnePlayer" Bounds="492.79638671875,76.0039901733398,186.343627929688,33.9316482543945" />
+    <Link Source="PMenu" Target="Set" Bounds="709.631652832031,80.4800033569336,0,21" />
+    <Link Source="PMenu" Target="TwoPlayer" Bounds="613.803100585938,79.8577194213867,66.507568359375,27.2139129638672" />
+    <Link Source="PlayEffect" Target="BeginLayer::oneMode" Category="Contains" />
+    <Link Source="PlayEffect" Target="ToChooseLayer" Bounds="129.63166809082,290.959991455078,0,21" />
+    <Link Source="PlayEffect1" Target="Director-&gt;end()" Bounds="419.631652832031,290.959991455078,0,21" />
+    <Link Source="PlayEffect1" Target="Sound/sf_button_press.mp31" Category="Contains" />
+    <Link Source="PlayEffect2" Target="Sound/sf_button_press.mp32" Category="Contains" />
+    <Link Source="PlayEffect2" Target="ToHelpLayer()" Bounds="709.631652832031,290.959991455078,0,21" />
+    <Link Source="PlayEffect3" Target="Sound/sf_button_press.mp33" Category="Contains" />
+    <Link Source="PlayEffect3" Target="ToHelpLayer()1" Bounds="999.631652832031,290.959991455078,0,21" />
+    <Link Source="Set" Target="BeginLayer::setSence" Bounds="709.631652832031,135.720001220703,0,21" />
+    <Link Source="This" Target="PMenu" Bounds="709.631652832031,25.2399997711182,0,21.0000019073486" />
+    <Link Source="This" Target="Sprite--Background" Bounds="617.614379882813,23.1790199279785,67.1680297851563,28.5412521362305" />
+    <Link Source="TwoPlayer" Target="BeginLayer::twoMode" Bounds="535.007751464844,135.720001220703,25.9315185546875,23.9004821777344" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>
