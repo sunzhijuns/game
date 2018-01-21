@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="BSprite--Background.png" Bounds="764.825,55.24,173.613333333333,25.24" Label="bSprite -- background.png" />
+    <Node Id="FanHui" Bounds="1168.605,110.48,58.0533333333333,25.24" Label="fanHui" />
+    <Node Id="FiveGuan" Bounds="1067.22833333333,110.48,70.8066666666664,25.24" Label="fiveGuan" />
+    <Node Id="FiveMode" Bounds="1160,165.72,259.263333333333,315.719999999999" Group="Expanded" Label="ChooseLayer::fiveMode" />
+    <Node Id="FourGuan" Bounds="962.576666666666,110.48,74.11,25.24" Label="fourGuan" />
+    <Node Id="FourMode" Bounds="870,165.72,259.263333333333,315.72" Group="Expanded" Label="ChooseLayer::fourMode" />
+    <Node Id="OneGuan" Bounds="645.543333333333,110.48,72.1766666666667,25.24" Label="oneGuan" />
+    <Node Id="OneMode" Bounds="0,165.72,259.263333333333,315.72" Group="Expanded" Label="ChooseLayer::oneMode" />
+    <Node Id="PMenu" Bounds="969.14,55.24,60.9833333333337,25.24" Label="pMenu" />
+    <Node Id="PlayBackgroundMusic" Bounds="37.7683333333333,376.2,183.726666666667,85.24" Group="Expanded" Label="playBackgroundMusic" />
+    <Node Id="PlayBackgroundMusic1" Bounds="327.768333333333,376.2,183.726666666667,85.24" Group="Expanded" Label="playBackgroundMusic" />
+    <Node Id="PlayBackgroundMusic2" Bounds="617.768333333333,376.2,183.726666666666,85.24" Group="Expanded" Label="playBackgroundMusic" />
+    <Node Id="PlayBackgroundMusic3" Bounds="907.768333333333,376.2,183.726666666667,85.24" Group="Expanded" Label="playBackgroundMusic" />
+    <Node Id="PlayBackgroundMusic4" Bounds="1197.76833333333,376.2,183.726666666667,85.2399999999998" Group="Expanded" Label="playBackgroundMusic" />
+    <Node Id="PlayEffect" Bounds="310,205.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect1" Bounds="600,205.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect2" Bounds="890,205.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect3" Bounds="1180,205.72,219.263333333333,85.2399999999998" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect4" Bounds="20,205.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect5" Bounds="1470,318.58,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PreloadEffect" Bounds="0,511.44,219.263333333333,85.24" Group="Expanded" Label="preloadEffect" />
+    <Node Id="SixMode" Bounds="1450,223.34,259.263333333333,200.48" Group="Expanded" Label="ChooseLayer::sixMode" />
+    <Node Id="Sound/bg_music.mp3" Bounds="57.7683333333333,416.2,143.726666666667,25.24" Label="sound/bg_music.mp3" />
+    <Node Id="Sound/bg_music.mp31" Bounds="347.768333333333,416.2,143.726666666667,25.24" Label="sound/bg_music.mp3" />
+    <Node Id="Sound/bg_music.mp32" Bounds="637.768333333333,416.2,143.726666666667,25.24" Label="sound/bg_music.mp3" />
+    <Node Id="Sound/bg_music.mp33" Bounds="927.768333333333,416.2,143.726666666667,25.24" Label="sound/bg_music.mp3" />
+    <Node Id="Sound/bg_music.mp34" Bounds="1217.76833333333,416.2,143.726666666667,25.24" Label="sound/bg_music.mp3" />
+    <Node Id="Sound/sf_button_press.mp3" Bounds="20,551.44,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp31" Bounds="40,245.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp32" Bounds="1490,358.58,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp33" Bounds="1200,245.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp34" Bounds="910,245.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp35" Bounds="620,245.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp36" Bounds="330,245.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="This" Bounds="974.631666666667,0,50.0000000000001,25.24" Label="this" />
+    <Node Id="ThreeGuan" Bounds="851.428333333333,110.48,80.4066666666668,25.24" Label="threeGuan" />
+    <Node Id="ThreeMode" Bounds="580,165.72,259.263333333333,315.72" Group="Expanded" Label="ChooseLayer::threeMode" />
+    <Node Id="ToBeginLayer()" Bounds="1528.00666666667,263.34,103.25,25.24" Label="toBeginLayer()" />
+    <Node Id="ToGameLayer" Bounds="77.5033333333333,320.96,104.256666666667,25.24" Label="toGameLayer()" />
+    <Node Id="ToGameLayer()" Bounds="367.503333333333,320.96,104.256666666667,25.24" Label="toGameLayer()" />
+    <Node Id="ToGameLayer()1" Bounds="657.503333333333,320.96,104.256666666667,25.24" Label="toGameLayer()" />
+    <Node Id="ToGameLayer()2" Bounds="947.503333333333,320.96,104.256666666667,25.24" Label="toGameLayer()" />
+    <Node Id="ToGameLayer()3" Bounds="1237.50333333333,320.96,104.256666666667,25.24" Label="toGameLayer()" />
+    <Node Id="TwoGuan" Bounds="748.673333333333,110.48,71.916666666667,25.24" Label="twoGuan" />
+    <Node Id="TwoMode" Bounds="290,165.72,259.263333333333,315.72" Group="Expanded" Label="ChooseLayer::twoMode" />
+  </Nodes>
+  <Links>
+    <Link Source="FanHui" Target="SixMode" Bounds="1226.65832519531,127.482604980469,252.808227539063,89.2926483154297" />
+    <Link Source="FiveGuan" Target="FiveMode" Bounds="1114.40307617188,135.720001220703,39.4581298828125,42.3023834228516" />
+    <Link Source="FiveMode" Target="PlayBackgroundMusic4" Category="Contains" />
+    <Link Source="FiveMode" Target="PlayEffect3" Category="Contains" />
+    <Link Source="FiveMode" Target="ToGameLayer()3" Category="Contains" />
+    <Link Source="FourGuan" Target="FourMode" Bounds="999.631652832031,135.720001220703,0,21" />
+    <Link Source="FourMode" Target="PlayBackgroundMusic3" Category="Contains" />
+    <Link Source="FourMode" Target="PlayEffect2" Category="Contains" />
+    <Link Source="FourMode" Target="ToGameLayer()2" Category="Contains" />
+    <Link Source="OneGuan" Target="OneMode" Bounds="265.445281982422,126.219116210938,380.098052978516,53.6610565185547" />
+    <Link Source="OneMode" Target="PlayBackgroundMusic" Category="Contains" />
+    <Link Source="OneMode" Target="PlayEffect4" Category="Contains" />
+    <Link Source="OneMode" Target="ToGameLayer" Category="Contains" />
+    <Link Source="PMenu" Target="FanHui" Bounds="1030.12329101563,76.3668670654297,129.812744140625,36.216438293457" />
+    <Link Source="PMenu" Target="FiveGuan" Bounds="1023.16278076172,80.4800033569336,48.0064086914063,25.7463302612305" />
+    <Link Source="PMenu" Target="FourGuan" Bounds="999.631652832031,80.4800033569336,0,21" />
+    <Link Source="PMenu" Target="OneGuan" Bounds="726.502746582031,76.2548065185547,242.637268066406,35.5327606201172" />
+    <Link Source="PMenu" Target="ThreeGuan" Bounds="924.317810058594,80.4800033569336,50.6404418945313,25.9016418457031" />
+    <Link Source="PMenu" Target="TwoGuan" Bounds="829.306884765625,75.6942291259766,139.833129882813,35.927360534668" />
+    <Link Source="PlayBackgroundMusic" Target="Sound/bg_music.mp3" Category="Contains" />
+    <Link Source="PlayBackgroundMusic1" Target="Sound/bg_music.mp31" Category="Contains" />
+    <Link Source="PlayBackgroundMusic2" Target="Sound/bg_music.mp32" Category="Contains" />
+    <Link Source="PlayBackgroundMusic3" Target="Sound/bg_music.mp33" Category="Contains" />
+    <Link Source="PlayBackgroundMusic4" Target="Sound/bg_music.mp34" Category="Contains" />
+    <Link Source="PlayEffect" Target="Sound/sf_button_press.mp36" Category="Contains" />
+    <Link Source="PlayEffect" Target="ToGameLayer()" Bounds="419.631652832031,290.959991455078,0,21" />
+    <Link Source="PlayEffect1" Target="Sound/sf_button_press.mp35" Category="Contains" />
+    <Link Source="PlayEffect1" Target="ToGameLayer()1" Bounds="709.631652832031,290.959991455078,0,21" />
+    <Link Source="PlayEffect2" Target="Sound/sf_button_press.mp34" Category="Contains" />
+    <Link Source="PlayEffect2" Target="ToGameLayer()2" Bounds="999.631652832031,290.959991455078,0,21" />
+    <Link Source="PlayEffect3" Target="Sound/sf_button_press.mp33" Category="Contains" />
+    <Link Source="PlayEffect3" Target="ToGameLayer()3" Bounds="1289.63171386719,290.959991455078,0,21" />
+    <Link Source="PlayEffect4" Target="Sound/sf_button_press.mp31" Category="Contains" />
+    <Link Source="PlayEffect4" Target="ToGameLayer" Bounds="129.63166809082,290.959991455078,0,21" />
+    <Link Source="PlayEffect5" Target="Sound/sf_button_press.mp32" Category="Contains" />
+    <Link Source="PreloadEffect" Target="Sound/sf_button_press.mp3" Category="Contains" />
+    <Link Source="SixMode" Target="PlayEffect5" Category="Contains" />
+    <Link Source="SixMode" Target="ToBeginLayer()" Category="Contains" />
+    <Link Source="This" Target="BSprite--Background.png" Bounds="893.875244140625,21.9510803222656,80.7564086914063,30.1417999267578" />
+    <Link Source="This" Target="PMenu" Bounds="999.631652832031,25.2399997711182,0,21.0000019073486" />
+    <Link Source="ThreeGuan" Target="ThreeMode" Bounds="845.312744140625,135.720001220703,34.8622436523438,38.4020690917969" />
+    <Link Source="ThreeMode" Target="PlayBackgroundMusic2" Category="Contains" />
+    <Link Source="ThreeMode" Target="PlayEffect1" Category="Contains" />
+    <Link Source="ThreeMode" Target="ToGameLayer()1" Category="Contains" />
+    <Link Source="ToBeginLayer()" Target="PlayEffect5" Bounds="1579.63171386719,288.579986572266,0,21" />
+    <Link Source="ToGameLayer" Target="PlayBackgroundMusic" Bounds="129.63166809082,346.200012207031,0,21" />
+    <Link Source="ToGameLayer()" Target="PlayBackgroundMusic1" Bounds="419.631652832031,346.200012207031,0,21" />
+    <Link Source="ToGameLayer()1" Target="PlayBackgroundMusic2" Bounds="709.631652832031,346.200012207031,0,21" />
+    <Link Source="ToGameLayer()2" Target="PlayBackgroundMusic3" Bounds="999.631652832031,346.200012207031,0,21" />
+    <Link Source="ToGameLayer()3" Target="PlayBackgroundMusic4" Bounds="1289.63171386719,346.200012207031,0,21" />
+    <Link Source="TwoGuan" Target="TwoMode" Bounds="556.007995605469,131.967849731445,192.665344238281,48.1826019287109" />
+    <Link Source="TwoMode" Target="PlayBackgroundMusic1" Category="Contains" />
+    <Link Source="TwoMode" Target="PlayEffect" Category="Contains" />
+    <Link Source="TwoMode" Target="ToGameLayer()" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>
