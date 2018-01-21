@@ -1,16 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="CreateScene" Bounds="-144.344827880859,-277.279891516113,122.18,140.4803" Group="Expanded" Label="createScene" UseManualLocation="True" />
-    <Node Id="OpenLayer" Bounds="-124.344827880859,-182.039700622559,82.1800000000001,25.24" Label="OpenLayer" />
-    <Node Id="Scene" Bounds="-109.546448771159,-237.279782409668,52.5833333333333,25.24" Label="scene" />
-    <Node Id="切换" Bounds="-272.255110864755,-314.119900512695,50,25.24" Label="this" UseManualLocation="True" />
+    <Node Id="AchieveLayer" Bounds="391.341666666667,150.48,95.4966666666667,25.24" />
+    <Node Id="BeginLayer" Bounds="196.521666666667,150.48,83.1366666666667,25.24" />
+    <Node Id="ChooseLayer" Bounds="593.303333333333,150.48,93.5733333333333,25.24" />
+    <Node Id="CreateScene" Bounds="0,55.2400000000001,122.18,140.48" Group="Expanded" Label="createScene()" />
+    <Node Id="GameLayer" Bounds="799.018333333333,150.48,84.1433333333334,25.24" />
+    <Node Id="GameSceneManager::toAchieveLayer()" Bounds="353.99,55.24,170.2,140.48" Group="Expanded" Label="toAchieveLayer()" />
+    <Node Id="OpenLayer" Bounds="20,150.48,82.1800000000001,25.24" Label="OpenLayer" />
+    <Node Id="Scene" Bounds="34.7983333333334,95.2400000000001,52.5833333333333,25.24" Label="scene" />
+    <Node Id="ToBeginLayer" Bounds="152.99,55.2400000000001,170.2,140.48" Group="Expanded" Label="toBeginLayer()" />
+    <Node Id="ToChooseLayer" Bounds="574.99,95.24,130.2,25.24" Label="toGameLayerSence" />
+    <Node Id="ToChooseLayer()" Bounds="554.99,55.24,170.2,140.48" Group="Expanded" Label="toChooseLayer()" />
+    <Node Id="ToGameLayer()" Bounds="775.99,95.24,130.2,25.24" Label="toGameLayerSence" />
+    <Node Id="ToGameLayer()1" Bounds="755.99,55.24,170.2,140.48" Group="Expanded" Label="toGameLayer()" />
+    <Node Id="ToGameLayerScene" Bounds="172.99,95.2400000000001,130.2,25.24" Label="toGameLayerScene" />
+    <Node Id="ToGameLayerSence" Bounds="373.99,95.24,130.2,25.24" Label="toGameLayerSence" />
+    <Node Id="切换" Bounds="414.09,0,50,25.24" Label="this" />
   </Nodes>
   <Links>
     <Link Source="CreateScene" Target="OpenLayer" Category="Contains" />
     <Link Source="CreateScene" Target="Scene" Category="Contains" />
-    <Link Source="Scene" Target="OpenLayer" Bounds="-83.2548038612817,-212.039787701416,1.7402363297947E-05,21.0001000000031" />
-    <Link Source="切换" Target="CreateScene" Bounds="-225.344449266474,-288.879908447266,73.2007549144861,42.1618549142985" />
+    <Link Source="GameSceneManager::toAchieveLayer()" Target="AchieveLayer" Category="Contains" />
+    <Link Source="GameSceneManager::toAchieveLayer()" Target="ToGameLayerSence" Category="Contains" />
+    <Link Source="Scene" Target="OpenLayer" Bounds="61.0900001525879,120.480003356934,0,20.9999923706055" />
+    <Link Source="ToBeginLayer" Target="BeginLayer" Category="Contains" />
+    <Link Source="ToBeginLayer" Target="ToGameLayerScene" Category="Contains" />
+    <Link Source="ToChooseLayer" Target="ChooseLayer" Bounds="640.090026855469,120.480003356934,0,20.9999923706055" />
+    <Link Source="ToChooseLayer()" Target="ChooseLayer" Category="Contains" />
+    <Link Source="ToChooseLayer()" Target="ToChooseLayer" Category="Contains" />
+    <Link Source="ToGameLayer()" Target="GameLayer" Bounds="841.090026855469,120.480003356934,0,20.9999923706055" />
+    <Link Source="ToGameLayer()1" Target="GameLayer" Category="Contains" />
+    <Link Source="ToGameLayer()1" Target="ToGameLayer()" Category="Contains" />
+    <Link Source="ToGameLayerScene" Target="BeginLayer" Bounds="238.089996337891,120.480003356934,0,20.9999923706055" />
+    <Link Source="ToGameLayerSence" Target="AchieveLayer" Bounds="439.089996337891,120.480003356934,0,20.9999923706055" />
+    <Link Source="切换" Target="CreateScene" Bounds="128.939788818359,15.5740766525269,285.150207519531,50.065899848938" />
+    <Link Source="切换" Target="GameSceneManager::toAchieveLayer()" Bounds="439.089996337891,25.2399997711182,0,21.0000019073486" />
+    <Link Source="切换" Target="ToBeginLayer" Bounds="330.872131347656,22.9934673309326,83.3140258789063,41.1446399688721" />
+    <Link Source="切换" Target="ToChooseLayer()" Bounds="463.993835449219,22.9934673309326,83.3140258789063,41.1446399688721" />
+    <Link Source="切换" Target="ToGameLayer()1" Bounds="464.089996337891,15.5754451751709,284.217987060547,46.1155490875244" />
   </Links>
   <Categories>
     <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
@@ -23,7 +51,8 @@
     <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
     <Property Id="IsContainment" DataType="System.Boolean" />
     <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
     <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
-    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="ZoomLevel" DataType="System.String" />
   </Properties>
 </DirectedGraph>
