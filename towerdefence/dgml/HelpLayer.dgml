@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="BackSprite--Backgroundh.png" Bounds="158.538333333333,85.2399999999998,200.186666666667,25.24" Label="backSprite -- backgroundh.png" />
+    <Node Id="FanhuiItem" Bounds="513.785,170.48,123.693333333333,25.24" Label="fanhuiItem -- 返回" />
+    <Node Id="HelpLayer::menuCallBack01" Bounds="0,253.34,259.263333333333,145.24" Group="Expanded" Label="HelpLayer::menuCallBack0" />
+    <Node Id="HelpLayer::menuCallBack1" Bounds="290,253.34,259.263333333333,145.24" Group="Expanded" />
+    <Node Id="Help[i]" Bounds="500.241666666667,95.2399999999998,116.78,25.24" Label="help[i] -- 9个图片" />
+    <Node Id="InitIntroPic()" Bounds="480.241666666667,55.2399999999998,156.78,85.24" Group="Expanded" Label="initIntroPic()" />
+    <Node Id="LeftItem" Bounds="207.55,170.48,118.163333333333,25.24" Label="leftItem -- 上一幅" />
+    <Node Id="MenuCallBack2" Bounds="580,225.72,259.263333333333,200.48" Group="Expanded" Label="menuCallBack2" />
+    <Node Id="PMenu" Bounds="389.14,85.2399999999998,60.9833333333333,25.24" Label="pMenu" />
+    <Node Id="PlayBackgroundMusic" Bounds="20,293.34,219.263333333333,85.24" Group="Expanded" Label="playBackgroundMusic" />
+    <Node Id="PlayBackgroundMusic1" Bounds="310,293.34,219.263333333333,85.24" Group="Expanded" Label="playBackgroundMusic" />
+    <Node Id="PlayEffect" Bounds="600,265.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PreloadEffect" Bounds="0,456.2,219.263333333333,85.24" Group="Expanded" Label="preloadEffect" />
+    <Node Id="RightItem" Bounds="356.21,170.48,126.843333333333,25.24" Label="rightItem -- 下一幅" />
+    <Node Id="Sound/sf_button_press.mp3" Bounds="20,496.2,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp31" Bounds="40,333.34,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp32" Bounds="330,333.34,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp33" Bounds="620,305.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="This" Bounds="394.631666666667,0,50,25.24" Label="this" />
+    <Node Id="ToBeginLayer()" Bounds="658.006666666667,380.96,103.25,25.24" Label="toBeginLayer()" />
+  </Nodes>
+  <Links>
+    <Link Source="FanhuiItem" Target="MenuCallBack2" Bounds="587.468994140625,195.720001220703,21.9822998046875,23.4357452392578" />
+    <Link Source="HelpLayer::menuCallBack01" Target="PlayBackgroundMusic" Category="Contains" />
+    <Link Source="HelpLayer::menuCallBack1" Target="PlayBackgroundMusic1" Category="Contains" />
+    <Link Source="InitIntroPic()" Target="Help[i]" Category="Contains" />
+    <Link Source="LeftItem" Target="HelpLayer::menuCallBack01" Bounds="205.502197265625,195.720001220703,49.0271301269531,51.1242065429688" />
+    <Link Source="MenuCallBack2" Target="PlayEffect" Category="Contains" />
+    <Link Source="MenuCallBack2" Target="ToBeginLayer()" Category="Contains" />
+    <Link Source="PMenu" Target="FanhuiItem" Bounds="433.175933837891,110.480003356934,95.9632873535156,57.1601791381836" />
+    <Link Source="PMenu" Target="LeftItem" Bounds="297.145874023438,110.480003356934,99.833740234375,55.6197891235352" />
+    <Link Source="PMenu" Target="RightItem" Bounds="419.631652832031,110.480003356934,0,50.9999923706055" />
+    <Link Source="PlayBackgroundMusic" Target="Sound/sf_button_press.mp31" Category="Contains" />
+    <Link Source="PlayBackgroundMusic1" Target="Sound/sf_button_press.mp32" Category="Contains" />
+    <Link Source="PlayEffect" Target="Sound/sf_button_press.mp33" Category="Contains" />
+    <Link Source="PlayEffect" Target="ToBeginLayer()" Bounds="709.631652832031,350.959991455078,0,21" />
+    <Link Source="PreloadEffect" Target="Sound/sf_button_press.mp3" Category="Contains" />
+    <Link Source="RightItem" Target="HelpLayer::menuCallBack1" Bounds="419.631652832031,195.720001220703,0,48.6199951171875" />
+    <Link Source="This" Target="BackSprite--Backgroundh.png" Bounds="290.422119140625,24.9495258331299,105.921722412109,56.0793056488037" />
+    <Link Source="This" Target="InitIntroPic()" Bounds="440.210968017578,25.2399997711182,41.2484436035156,25.2950763702393" />
+    <Link Source="This" Target="PMenu" Bounds="419.631652832031,25.2399997711182,0,50.9999980926514" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>
