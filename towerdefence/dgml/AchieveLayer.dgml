@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="AchieveLayer::menuCallBack" Bounds="781.766666666667,285.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="AchieveLayer::menuCallBack1" Bounds="741.766666666667,205.72,259.263333333333,200.48" Group="Expanded" Label="AchieveLayer::menuCallBack" />
+    <Node Id="BackSprite" Bounds="0,228.1,192.796666666667,25.24" Label="backSprite -- background.png" />
+    <Node Id="FanhuiItem" Bounds="830.291666666667,150.48,82.2133333333334,25.24" Label="fanhuiItem" />
+    <Node Id="Labels--3个名次" Bounds="39.6166666666664,456.2,113.563333333333,25.24" Label="labels -- 3个名次" />
+    <Node Id="PMenu" Bounds="840.906666666667,95.24,60.9833333333333,25.24" Label="pMenu" />
+    <Node Id="Paih1Sprite--Paih1.png" Bounds="243.106666666667,182.86,160.583333333333,25.24" Label="paih1Sprite -- paih1.png" />
+    <Node Id="Paih2Sprite--Paih2.png" Bounds="243.106666666667,238.1,160.583333333333,25.24" Label="paih2Sprite -- paih2.png" />
+    <Node Id="Paih3Sprite--Paih3.png" Bounds="243.106666666667,293.34,160.583333333333,25.24" Label="paih3Sprite -- paih3.png" />
+    <Node Id="PaihangSprite--Paihang1.png" Bounds="473.921666666667,265.72,196.953333333333,25.24" Label="paihangSprite -- paihang1.png" />
+    <Node Id="PlayEffect" Bounds="761.766666666667,245.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlaySprite" Bounds="473.921666666667,210.48,167.173333333333,25.24" Label="playSprite -- paihang.png" />
+    <Node Id="PreloadEffect" Bounds="0,511.44,219.263333333333,85.24" Group="Expanded" Label="preloadEffect" />
+    <Node Id="Sound/sf_button_press.mp3" Bounds="20,551.44,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="This" Bounds="547.398333333333,0,50,25.24" Label="this" />
+    <Node Id="ToBeginLayer()" Bounds="819.773333333333,360.96,103.25,25.24" Label="toBeginLayer()" />
+    <Node Id="排行1-2-3" Bounds="223.106666666667,142.86,200.583333333333,195.72" Group="Expanded" />
+    <Node Id="标题" Bounds="453.921666666667,170.48,236.953333333333,140.48" Group="Expanded" />
+    <Node Id="返回" Bounds="721.766666666667,55.24,299.263333333333,370.96" Group="Expanded" />
+  </Nodes>
+  <Links>
+    <Link Source="AchieveLayer::menuCallBack1" Target="PlayEffect" Category="Contains" />
+    <Link Source="AchieveLayer::menuCallBack1" Target="ToBeginLayer()" Category="Contains" />
+    <Link Source="BackSprite" Target="Labels--3个名次" Bounds="96.3983306884766,253.339996337891,0,193.860015869141" />
+    <Link Source="FanhuiItem" Target="AchieveLayer::menuCallBack1" Bounds="871.398315429688,175.720001220703,0,21" />
+    <Link Source="PMenu" Target="FanhuiItem" Bounds="871.398315429688,120.480003356934,0,20.9999923706055" />
+    <Link Source="PlayEffect" Target="AchieveLayer::menuCallBack" Category="Contains" />
+    <Link Source="PlayEffect" Target="ToBeginLayer()" Bounds="871.398315429688,330.959991455078,0,21" />
+    <Link Source="PreloadEffect" Target="Sound/sf_button_press.mp3" Category="Contains" />
+    <Link Source="This" Target="BackSprite" Bounds="117.757804870605,21.2344951629639,429.640510559082,200.970506668091" />
+    <Link Source="This" Target="排行1-2-3" Bounds="430.326385498047,25.2399997711182,128.295623779297,117.527044296265" />
+    <Link Source="This" Target="标题" Bounds="572.398315429688,25.2399997711182,0,136.239995956421" />
+    <Link Source="This" Target="返回" Bounds="588.940979003906,25.2399997711182,125.670166015625,95.8707714080811" />
+    <Link Source="排行1-2-3" Target="Paih1Sprite--Paih1.png" Category="Contains" />
+    <Link Source="排行1-2-3" Target="Paih2Sprite--Paih2.png" Category="Contains" />
+    <Link Source="排行1-2-3" Target="Paih3Sprite--Paih3.png" Category="Contains" />
+    <Link Source="标题" Target="PaihangSprite--Paihang1.png" Category="Contains" />
+    <Link Source="标题" Target="PlaySprite" Category="Contains" />
+    <Link Source="返回" Target="AchieveLayer::menuCallBack1" Category="Contains" />
+    <Link Source="返回" Target="FanhuiItem" Category="Contains" />
+    <Link Source="返回" Target="PMenu" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>
