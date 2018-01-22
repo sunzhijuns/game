@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Angle--角度" Bounds="196.746666666667,547.86,122.823333333333,25.24" Label="angle float -- 角度" />
+    <Node Id="Confines--攻击范围" Bounds="120,190.48,152.236666666667,25.24" Label="confines int -- 攻击范围" />
+    <Node Id="FireBool--发射子弹" Bounds="120,135.24,133.893333333333,25.24" Label="fire bool -- 发射子弹" />
+    <Node Id="Fireing()--发射子弹" Bounds="590.558333333334,264,130.503333333333,25.24" Label="fireing() -- 发射子弹" />
+    <Node Id="Hurt--伤害值" Bounds="120,80,115.923333333333,25.24" Label="hurt int -- 伤害值" />
+    <Node Id="Id" Bounds="192.606666666667,771.86,131.103333333333,25.24" Label="id int -- 1，2，3，4" />
+    <Node Id="LeftProgressTimer*" Bounds="193.115,603.86,130.086666666667,25.24" Label="left ProgressTimer*" />
+    <Node Id="Level--武器级别" Bounds="265.923333333333,80,130.393333333333,25.24" Label="level int -- 武器级别" />
+    <Node Id="PointColRow--Point" Bounds="187.335,715.86,141.646666666667,25.24" Label="pointColRow -- Point" />
+    <Node Id="Public" Bounds="0,0,436.316666666667,817.1" Group="Expanded" Label="public" LayoutSettings="LeftToRight" />
+    <Node Id="Public1" Bounds="466.316666666667,0,298.986666666667,421.24" Group="Expanded" Label="public" LayoutSettings="LeftToRight" />
+    <Node Id="SellValue--卖掉得到的金币" Bounds="189.97,472.1,136.376666666667,25.24" Label="sellValue -- 卖掉得到" />
+    <Node Id="SetFire()" Bounds="622.906666666667,208,65.8066666666664,25.24" Label="setFire()" />
+    <Node Id="StaticCreate(id)" Bounds="601.763333333334,96,108.093333333333,25.24" Label="static create(id)" />
+    <Node Id="StaticCreate(id,Level,Angle)" Bounds="566.316666666667,152,178.986666666667,25.24" Label="static create(id, level, angle)" />
+    <Node Id="StaticCreate(pic,Id)" Bounds="590.106666666667,40,131.406666666667,25.24" Label="static create(pic, id)" />
+    <Node Id="This" Bounds="20,603.86,50,25.24" Label="this" />
+    <Node Id="This1" Bounds="486.316666666667,208,50,25.24" Label="this" />
+    <Node Id="UpValue--升级需要的金币" Bounds="189.97,416.86,132.683333333333,25.24" Label="upValue -- 升级需要" />
+    <Node Id="Update()--升级前准备" Bounds="582.74,320,146.14,25.24" Label="update() -- 升级前准备" />
+    <Node Id="UpdateData()" Bounds="608.041666666667,376,95.5366666666666,25.24" Label="updateData()" />
+    <Node Id="UpdateMark--更新标志位" Bounds="174.358333333334,659.86,167.6,25.24" Label="updateMark -- 更新标志位" />
+    <Node Id="Updatetime--发射子弹的速率" Bounds="120,245.72,187.843333333333,25.24" Label="updatetime -- 发射子弹的速率" />
+    <Node Id="Value--安装需要的金币" Bounds="189.97,361.62,115.81,25.24" Label="value -- 安装需要" />
+    <Node Id="攻击" Bounds="100,40,316.316666666667,250.96" Group="Expanded" />
+    <Node Id="金币" Bounds="169.97,321.62,176.376666666667,195.72" Group="Expanded" Label="金币 int" />
+  </Nodes>
+  <Links>
+    <Link Source="Public" Target="Angle--角度" Category="Contains" />
+    <Link Source="Public" Target="Id" Category="Contains" />
+    <Link Source="Public" Target="LeftProgressTimer*" Category="Contains" />
+    <Link Source="Public" Target="PointColRow--Point" Category="Contains" />
+    <Link Source="Public" Target="This" Category="Contains" />
+    <Link Source="Public" Target="UpdateMark--更新标志位" Category="Contains" />
+    <Link Source="Public" Target="攻击" Category="Contains" />
+    <Link Source="Public" Target="金币" Category="Contains" />
+    <Link Source="Public1" Target="Fireing()--发射子弹" Category="Contains" />
+    <Link Source="Public1" Target="SetFire()" Category="Contains" />
+    <Link Source="Public1" Target="StaticCreate(id)" Category="Contains" />
+    <Link Source="Public1" Target="StaticCreate(id,Level,Angle)" Category="Contains" />
+    <Link Source="Public1" Target="StaticCreate(pic,Id)" Category="Contains" />
+    <Link Source="Public1" Target="This1" Category="Contains" />
+    <Link Source="Public1" Target="Update()--升级前准备" Category="Contains" />
+    <Link Source="Public1" Target="UpdateData()" Category="Contains" />
+    <Link Source="This" Target="Angle--角度" Bounds="70,575.386840820313,131.416961669922,34.5252685546875" />
+    <Link Source="This" Target="Id" Bounds="57.7251472473145,629.099975585938,163.15922164917,139.1708984375" />
+    <Link Source="This" Target="LeftProgressTimer*" Bounds="70,616.47998046875,114.115005493164,0" />
+    <Link Source="This" Target="PointColRow--Point" Bounds="67.6335296630859,629.032348632813,156.203308105469,82.9235229492188" />
+    <Link Source="This" Target="UpdateMark--更新标志位" Bounds="70,623.047912597656,131.416961669922,34.5252685546875" />
+    <Link Source="This" Target="攻击" Bounds="49.6589164733887,298.908050537109,122.909183502197,304.951934814453" />
+    <Link Source="This" Target="金币" Bounds="58.6551170349121,507.091796875,104.705341339111,96.7681884765625" />
+    <Link Source="This1" Target="Fireing()--发射子弹" Bounds="536.315856933594,230.308715820313,78.5397338867188,30.4389343261719" />
+    <Link Source="This1" Target="SetFire()" Bounds="536.316650390625,220.619995117188,77.5900268554688,0" />
+    <Link Source="This1" Target="StaticCreate(id)" Bounds="517.338806152344,123.625396728516,78.4547729492188,84.3746032714844" />
+    <Link Source="This1" Target="StaticCreate(id,Level,Angle)" Bounds="536.315856933594,180.492340087891,78.5397338867188,30.4389343261719" />
+    <Link Source="This1" Target="StaticCreate(pic,Id)" Bounds="518.791625976563,69.3701171875,104.588195800781,138.6298828125" />
+    <Link Source="This1" Target="Update()--升级前准备" Bounds="523.896362304688,233.240005493164,100.197814941406,82.5391998291016" />
+    <Link Source="This1" Target="UpdateData()" Bounds="517.38525390625,233.240005493164,101.752807617188,139.110153198242" />
+    <Link Source="攻击" Target="Confines--攻击范围" Category="Contains" />
+    <Link Source="攻击" Target="FireBool--发射子弹" Category="Contains" />
+    <Link Source="攻击" Target="Hurt--伤害值" Category="Contains" />
+    <Link Source="攻击" Target="Level--武器级别" Category="Contains" />
+    <Link Source="攻击" Target="Updatetime--发射子弹的速率" Category="Contains" />
+    <Link Source="金币" Target="SellValue--卖掉得到的金币" Category="Contains" />
+    <Link Source="金币" Target="UpValue--升级需要的金币" Category="Contains" />
+    <Link Source="金币" Target="Value--安装需要的金币" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="LayoutSettings" DataType="Microsoft.VisualStudio.Diagrams.View.GroupLayoutStyle" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

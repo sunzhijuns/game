@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Blood--血量" Bounds="531.365,264,113.88,25.24" Label="blood int -- 血量" />
+    <Node Id="CutBlood(int);" Bounds="178.895,208,97.5,25.24" Label="cutBlood(int);" />
+    <Node Id="Id" Bounds="563.305,208,50,25.24" Label="id int" />
+    <Node Id="MaxBlood" Bounds="549.495,152,77.6199999999999,25.24" Label="maxBlood" />
+    <Node Id="Monster" Bounds="425.29,152,50,25.24" Label="this" />
+    <Node Id="Public" Bounds="405.29,0,286.03,309.24" Group="Expanded" Label="public" LayoutSettings="LeftToRight" />
+    <Node Id="Public1" Bounds="0,0,375.29,365.24" Group="Expanded" Label="public" LayoutSettings="LeftToRight" />
+    <Node Id="Refresh();" Bounds="176.395,96,102.5,25.24" Label="refresh(angle);" />
+    <Node Id="RemoveSprite(node);" Bounds="158.926666666667,40,137.436666666667,25.24" Label="removeSprite(node);" />
+    <Node Id="SelfWay--Vector&lt;Point&gt;" Bounds="505.29,96,166.03,25.24" Label="selfWay -- vector&lt;Point&gt;" />
+    <Node Id="SetVisibleFalse();" Bounds="170.633333333333,152,114.023333333333,25.24" Label="setVisibleFalse();" />
+    <Node Id="StaticCreate(id,SelfWay);" Bounds="146.478333333333,320,162.333333333333,25.24" Label="static create(id, selfWay);" />
+    <Node Id="StaticCreate(id,Way,MaxBlood,SelfWay);" Bounds="100,264,255.29,25.24" Label="static create(id, way, maxBlood, selfWay);" />
+    <Node Id="This" Bounds="20,152,50,25.24" Label="this" />
+    <Node Id="WayInt" Bounds="557.773333333333,40,61.0633333333333,25.24" Label="way int" />
+  </Nodes>
+  <Links>
+    <Link Source="Monster" Target="Blood--血量" Bounds="465.841339111328,177.240005493164,99.9239196777344,81.0888519287109" />
+    <Link Source="Monster" Target="Id" Bounds="475.246948242188,174.746353149414,79.761474609375,32.3634490966797" />
+    <Link Source="Monster" Target="MaxBlood" Bounds="475.290008544922,164.619995117188,65.2049865722656,0" />
+    <Link Source="Monster" Target="SelfWay--Vector&lt;Point&gt;" Bounds="475.246948242188,124.623832702637,73.61572265625,29.8698043823242" />
+    <Link Source="Monster" Target="WayInt" Bounds="456.563018798828,63.7090530395508,92.5502624511719,88.2909469604492" />
+    <Link Source="Public" Target="Blood--血量" Category="Contains" />
+    <Link Source="Public" Target="Id" Category="Contains" />
+    <Link Source="Public" Target="MaxBlood" Category="Contains" />
+    <Link Source="Public" Target="Monster" Category="Contains" />
+    <Link Source="Public" Target="SelfWay--Vector&lt;Point&gt;" Category="Contains" />
+    <Link Source="Public" Target="WayInt" Category="Contains" />
+    <Link Source="Public1" Target="CutBlood(int);" Category="Contains" />
+    <Link Source="Public1" Target="Refresh();" Category="Contains" />
+    <Link Source="Public1" Target="RemoveSprite(node);" Category="Contains" />
+    <Link Source="Public1" Target="SetVisibleFalse();" Category="Contains" />
+    <Link Source="Public1" Target="StaticCreate(id,SelfWay);" Category="Contains" />
+    <Link Source="Public1" Target="StaticCreate(id,Way,MaxBlood,SelfWay);" Category="Contains" />
+    <Link Source="Public1" Target="This" Category="Contains" />
+    <Link Source="This" Target="CutBlood(int);" Bounds="70,172.285140991211,107.880004882813,33.0766296386719" />
+    <Link Source="This" Target="Refresh();" Bounds="70,123.878227233887,107.880004882813,33.0766372680664" />
+    <Link Source="This" Target="RemoveSprite(node);" Bounds="65.5801773071289,69.9447784423828,133.812294006348,82.0552215576172" />
+    <Link Source="This" Target="SetVisibleFalse();" Bounds="70,164.619995117188,91.6333312988281,0" />
+    <Link Source="This" Target="StaticCreate(id,SelfWay);" Bounds="49.4419975280762,177.240005493164,119.493000030518,140.55680847168" />
+    <Link Source="This" Target="StaticCreate(id,Way,MaxBlood,SelfWay);" Bounds="65.5801773071289,177.240005493164,133.812294006348,82.0552215576172" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="LayoutSettings" DataType="Microsoft.VisualStudio.Diagrams.View.GroupLayoutStyle" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

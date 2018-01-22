@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="AngleFloat" Bounds="128.693333333333,40,81.3433333333334,25.24" Label="angle float" />
+    <Node Id="HurtInt伤害值" Bounds="116.593333333333,152,105.543333333333,25.24" Label="hurt  int 伤害值" />
+    <Node Id="IdInt1,2,3" Bounds="129.406666666667,208,79.9166666666667,25.24" Label="id int 1,2,3" />
+    <Node Id="Public" Bounds="0,0,258.73,253.24" Group="Expanded" Label="public" LayoutSettings="LeftToRight" />
+    <Node Id="Public1" Bounds="288.73,0,309.006666666667,141.24" Group="Expanded" Label="public" LayoutSettings="LeftToRight" />
+    <Node Id="StaticCreate(pic,Hurt,Target)" Bounds="388.73,40,189.006666666667,25.24" Label="static create(pic, hurt,  target)" />
+    <Node Id="StaticCreate(pic,Id)" Bounds="417.53,96,131.406666666667,25.24" Label="static create(pic, id)" />
+    <Node Id="TargetInt--目标野怪" Bounds="100,96,138.73,25.24" Label="target int -- 目标野怪" />
+    <Node Id="This" Bounds="20,96,50,25.24" Label="this" />
+    <Node Id="This1" Bounds="308.73,40,50,25.24" Label="this" />
+  </Nodes>
+  <Links>
+    <Link Source="Public" Target="AngleFloat" Category="Contains" />
+    <Link Source="Public" Target="HurtInt伤害值" Category="Contains" />
+    <Link Source="Public" Target="IdInt1,2,3" Category="Contains" />
+    <Link Source="Public" Target="TargetInt--目标野怪" Category="Contains" />
+    <Link Source="Public" Target="This" Category="Contains" />
+    <Link Source="Public1" Target="StaticCreate(pic,Hurt,Target)" Category="Contains" />
+    <Link Source="Public1" Target="StaticCreate(pic,Id)" Category="Contains" />
+    <Link Source="Public1" Target="This1" Category="Contains" />
+    <Link Source="This" Target="AngleFloat" Bounds="69.6178970336914,68.9352416992188,63.5141525268555,28.5996246337891" />
+    <Link Source="This" Target="HurtInt伤害值" Bounds="69.6178970336914,119.705131530762,63.5141525268555,28.5996322631836" />
+    <Link Source="This" Target="IdInt1,2,3" Bounds="56.8851089477539,121.23999786377,87.1731185913086,81.5827407836914" />
+    <Link Source="This" Target="TargetInt--目标野怪" Bounds="70,108.620002746582,21,0" />
+    <Link Source="This1" Target="StaticCreate(pic,Hurt,Target)" Bounds="358.730010986328,52.6199989318848,21,0" />
+    <Link Source="This1" Target="StaticCreate(pic,Id)" Bounds="358.730010986328,61.9843406677246,82.383544921875,30.858699798584" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="LayoutSettings" DataType="Microsoft.VisualStudio.Diagrams.View.GroupLayoutStyle" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>
