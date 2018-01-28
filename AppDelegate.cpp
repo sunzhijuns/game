@@ -1,5 +1,6 @@
+#include <WarshipsFightcpp/WarshipsFightSceneManager.h>
 #include "AppDelegate.h"
-#include "towerdefence/GameSceneManager.h"
+//#include "towerdefence/GameSceneManager.h"
 #include "SimpleAudioEngine.h"
 
 // #define USE_AUDIO_ENGINE 1
@@ -19,10 +20,15 @@ using namespace CocosDenshion;
 
 USING_NS_CC;
 
-static cocos2d::Size designResolutionSize = cocos2d::Size(800,480);
-static cocos2d::Size smallResolutionSize = cocos2d::Size(800,480);
-static cocos2d::Size mediumResolutionSize = cocos2d::Size(800,480);
-static cocos2d::Size largeResolutionSize = cocos2d::Size(800,480);
+//static cocos2d::Size designResolutionSize = cocos2d::Size(800,480);
+//static cocos2d::Size smallResolutionSize = cocos2d::Size(800,480);
+//static cocos2d::Size mediumResolutionSize = cocos2d::Size(800,480);
+//static cocos2d::Size largeResolutionSize = cocos2d::Size(800,480);
+
+static cocos2d::Size designResolutionSize = cocos2d::Size(960,540);
+static cocos2d::Size smallResolutionSize = cocos2d::Size(960,540);
+static cocos2d::Size mediumResolutionSize = cocos2d::Size(960,540);
+static cocos2d::Size largeResolutionSize = cocos2d::Size(960,540);
 
 AppDelegate::AppDelegate()
 {
@@ -98,9 +104,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
 //    auto scene = HelloWorld::createScene();
 
     //创建欢迎场景
-    auto scene = GameSceneManager::createScene();
+//    auto scene = GameSceneManager::createScene();
+
+    WarshipsFightSceneManager* wfsm = new WarshipsFightSceneManager();
+    wfsm->createScene();
     //跌换到欢迎场景显示
-    director->runWithScene(scene);
+    director->runWithScene(wfsm->StartScene);
     //加载音乐
 
     return true;
