@@ -1,60 +1,124 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="DialogLayer::create()" Bounds="61.0733333333333,210.48,137.116666666667,25.24" />
-    <Node Id="Director-&gt;pause()" Bounds="69.0716666666667,155.24,121.12,25.24" Label="director-&gt;pause()" />
-    <Node Id="GameLayer::attack" Bounds="289.263333333333,0,466.763333333333,310.96" Group="Expanded" />
-    <Node Id="GameLayer::cutBloodOne" Bounds="805.69,340.96,252.06,145.24" Group="Expanded" />
-    <Node Id="GameLayer::fireBulletTwo" Bounds="1087.75,340.96,252.06,145.24" Group="Expanded" />
-    <Node Id="GameLayer::loseGame" Bounds="0,340.96,247.766666666666,260.48" Group="Expanded" />
-    <Node Id="GameLayer::monsterRun" Bounds="523.63,340.96,252.06,145.24" Group="Expanded" />
-    <Node Id="GameLayer::playGameCallback" Bounds="277.766666666666,340.96,215.863333333333,200.48" Group="Expanded" Label="GameLayer::playGameCallback" />
-    <Node Id="GameLayer::runBullet" Bounds="-1.4210854715202E-14,631.44,252.06,145.24" Group="Expanded" />
-    <Node Id="Gbsprite--Back.png" Bounds="302.06,726.68,137.563333333334,25.24" Label="gbsprite -- back.png" />
-    <Node Id="Id==1" Bounds="387.72,190.48,55.7066666666667,25.24" Label="id==1" />
-    <Node Id="Id==2" Bounds="386.011666666667,80,55.7066666666667,25.24" Label="id==2" />
-    <Node Id="Id==3" Bounds="596.101666666667,190.48,55.7066666666667,25.24" Label="id==3" />
-    <Node Id="Id==4" Bounds="586.643333333333,80,55.7066666666667,25.24" Label="id==4" />
-    <Node Id="IsMonsterRun=true" Bounds="319.855,496.2,131.686666666667,25.24" Label="isMonsterRun=true" />
-    <Node Id="IsPause=true" Bounds="82.3133333333333,265.72,94.6366666666668,25.24" Label="isPause=true" />
-    <Node Id="PlayEffect" Bounds="20,40,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
-    <Node Id="PlayEffect1" Bounds="297.766666666666,380.96,175.863333333333,85.24" Group="Expanded" Label="playEffect" />
-    <Node Id="PlayEffect2" Bounds="543.63,380.96,212.06,85.24" Group="Expanded" Label="playEffect" />
-    <Node Id="PlayEffect3" Bounds="309.263333333333,40,426.763333333333,250.96" Group="Expanded" Label="playEffect" />
-    <Node Id="PlayEffect4" Bounds="825.69,380.96,212.06,85.24" Group="Expanded" Label="playEffect" />
-    <Node Id="PlayEffect5" Bounds="1107.75,380.96,212.06,85.24" Group="Expanded" Label="playEffect" />
-    <Node Id="PlayEffect6" Bounds="20,671.44,212.06,85.24" Group="Expanded" Label="playEffect" />
-    <Node Id="PlayEffect7" Bounds="20,380.96,207.766666666666,85.24" Group="Expanded" Label="playEffect" />
-    <Node Id="PreloadEffect" Bounds="786.026666666667,0,411.263333333333,306.2" Group="Expanded" Label="preloadEffect" />
-    <Node Id="Public" Bounds="489.623333333333,631.44,90,85.24" Group="Expanded" Label="public" />
-    <Node Id="Sound/bg_music.mp3" Bounds="52.02,536.2,143.726666666666,25.24" Label="sound/bg_music.mp3" />
-    <Node Id="Sound/sf_button_press.mp3" Bounds="806.026666666667,205.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
-    <Node Id="Sound/sf_button_press.mp31" Bounds="40,80,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
-    <Node Id="Sound/sf_creep_die_0.mp3" Bounds="1005.23,95.24,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
-    <Node Id="Sound/sf_creep_die_0.mp31" Bounds="563.63,420.96,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
-    <Node Id="Sound/sf_creep_die_0.mp32" Bounds="528.466666666667,135.24,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
-    <Node Id="Sound/sf_creep_die_0.mp33" Bounds="845.69,420.96,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
-    <Node Id="Sound/sf_creep_die_0.mp34" Bounds="1127.75,420.96,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
-    <Node Id="Sound/sf_creep_die_0.mp35" Bounds="40,711.44,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
-    <Node Id="Sound/sf_game_over.mp3" Bounds="971.89,40,167.766666666666,25.24" Label="sound/sf_game_over.mp3" />
-    <Node Id="Sound/sf_game_over.mp31" Bounds="40,420.96,167.766666666666,25.24" Label="sound/sf_game_over.mp3" />
-    <Node Id="Sound/sf_laser_beam.mp3" Bounds="806.026666666667,95.24,169.203333333333,25.24" Label="sound/sf_laser_beam.mp3" />
-    <Node Id="Sound/sf_laser_beam.mp31" Bounds="329.263333333333,135.24,169.203333333333,25.24" Label="sound/sf_laser_beam.mp3" />
-    <Node Id="Sound/sf_minigun_hit.mp3" Bounds="806.026666666667,150.48,172.62,25.24" Label="sound/sf_minigun_hit.mp3" />
-    <Node Id="Sound/sf_minigun_hit.mp31" Bounds="329.263333333333,245.72,172.62,25.24" Label="sound/sf_minigun_hit.mp3" />
-    <Node Id="Sound/sf_rocket_launch.mp3" Bounds="806.026666666667,260.96,184.143333333333,25.24" Label="sound/sf_rocket_launch.mp3" />
-    <Node Id="Sound/sf_rocket_launch.mp31" Bounds="531.883333333333,245.72,184.143333333333,25.24" Label="sound/sf_rocket_launch.mp3" />
-    <Node Id="Sound/sf_swish.mp3" Bounds="806.026666666667,40,135.863333333333,25.24" Label="sound/sf_swish.mp3" />
-    <Node Id="Sound/sf_swish.mp31" Bounds="317.766666666666,420.96,135.863333333333,25.24" Label="sound/sf_swish.mp3" />
-    <Node Id="StopBackgroundMusic" Bounds="32.02,496.2,183.726666666666,85.24" Group="Expanded" Label="stopBackgroundMusic" />
-    <Node Id="This" Bounds="509.623333333333,671.44,50,25.24" Label="this" />
-    <Node Id="This1" Bounds="345.841666666667,671.44,50,25.24" Label="this" />
-    <Node Id="ZanTing" Bounds="0,0,259.263333333333,310.96" Group="Expanded" Label="GameLayer::zanTing" />
-    <Node Id="布局" Bounds="282.06,631.44,177.563333333334,140.48" Group="Expanded" />
+    <Node Id="AddParticle" Bounds="1044.695,210.48,315.48,140.48" Group="Expanded" Label="addParticle(point, time)" />
+    <Node Id="AddParticle(point,Id,Time)--野怪到达终点时的特效" Bounds="1390.175,210.48,329.54,140.48" Group="Expanded" Label="addParticle(point, id, time) -- 野怪到达终点时的特效" />
+    <Node Id="AddParticle(point,Id,Time,Angle)" Bounds="1044.695,40,230.206666666667,140.48" Group="Expanded" Label="addParticle(point, id, time, angle)" />
+    <Node Id="AddParticle1(point,Id,Time)--野怪死时的特效" Bounds="1304.90166666667,40,300.576666666667,140.48" Group="Expanded" Label="addParticle1(point, id, time) -- 野怪死时的特效" />
+    <Node Id="Attack" Bounds="2206.99089948523,10.2303100344945,267.161666666667,140.480243640137" Group="Expanded" Label="attack" />
+    <Node Id="Bullet" Bounds="2226.99089948523,105.470449859934,52.7233333333334,25.24" Label="bullet" />
+    <Node Id="Bullet1" Bounds="2203.61684895833,297.387621805521,52.7233333333334,25.24" Label="bullet" />
+    <Node Id="Cc--Fire1.png" Bounds="1239.255,305.719999999999,100.92,25.24" Label="cc -- fire1.png" />
+    <Node Id="Cc--Fire1.png1" Bounds="1591.39583333333,305.719999999999,100.92,25.2399999999998" Label="cc -- fire1.png" />
+    <Node Id="Ccp" Bounds="1510.85583333333,305.719999999999,50,25.2399999999998" Label="ccp" />
+    <Node Id="Ccp1" Bounds="1476.83083333333,135.24,50,25.2399999999998" Label="ccp" />
+    <Node Id="CutBloodOne--怪掉血" Bounds="2463.24829101563,180.619222354825,180.05,140.48" Group="Expanded" Label="cutBloodOne -- 怪掉血" />
+    <Node Id="DialogLayer" Bounds="444.145,300.96,86.5366666666666,25.24" Label="dialogLayer" />
+    <Node Id="DialogLayer::create()" Bounds="223.958333333333,416.2,137.116666666667,25.24" Label="DialogLayer::create()" />
+    <Node Id="Director-&gt;pause()" Bounds="231.956666666667,360.96,121.12,25.24" Label="director-&gt;pause()" />
+    <Node Id="FireBulletOne--第一个防御塔攻击" Bounds="2115.578515625,202.157421219901,228.8,140.44080200176" Group="Expanded" Label="fireBulletOne -- 第一个防御塔攻击" />
+    <Node Id="FoundMonsters" Bounds="1895.06506312178,91.5736637329101,187.086666666668,140.480312304688" Group="Expanded" Label="foundMonsters" />
+    <Node Id="GameLayer::attack" Bounds="0,566.68,466.763333333333,310.96" Group="Expanded" />
+    <Node Id="GameLayer::cutBloodOne" Bounds="564.12,1080.5,252.06,145.2404" Group="Expanded" />
+    <Node Id="GameLayer::fireBulletTwo" Bounds="-1.4210854715202E-14,907.64,252.06,145.24" Group="Expanded" />
+    <Node Id="GameLayer::loseGame" Bounds="938.026666666667,504.3,247.766666666666,260.4807" Group="Expanded" />
+    <Node Id="GameLayer::monsterRun" Bounds="1215.79333333333,566.68,252.06,145.24" Group="Expanded" />
+    <Node Id="GameLayer::playGameCallback" Bounds="758.831666666667,150.48,215.863333333333,200.48" Group="Expanded" Label="GameLayer::playGameCallback" />
+    <Node Id="GameLayer::ready" Bounds="841.763333333334,40,50,25.24" Label="this" />
+    <Node Id="GameLayer::ready1" Bounds="612.678333333334,0,382.016666666667,370.96" Group="Expanded" Label="GameLayer::ready" />
+    <Node Id="GameLayer::runBullet" Bounds="282.06,907.64,252.06,145.24" Group="Expanded" />
+    <Node Id="GameLayer::this" Bounds="432.148333333333,245.72,110.53,25.24" />
+    <Node Id="Gbsprite--Back.png" Bounds="20,95.24,137.563333333334,25.24" Label="gbsprite -- back.png" />
+    <Node Id="Id==1" Bounds="312.6,757.16,55.7066666666667,25.24" Label="id==1" />
+    <Node Id="Id==2" Bounds="96.7483333333333,646.68,55.7066666666667,25.24" Label="id==2" />
+    <Node Id="Id==3" Bounds="104.218333333333,757.16,55.7066666666667,25.24" Label="id==3" />
+    <Node Id="Id==4" Bounds="297.38,646.68,55.7066666666667,25.24" Label="id==4" />
+    <Node Id="IsMonsterRun=true" Bounds="800.92,305.72,131.686666666667,25.24" Label="isMonsterRun=true" />
+    <Node Id="IsPause=true" Bounds="245.198333333333,471.44,94.6366666666668,25.24" Label="isPause=true" />
+    <Node Id="Left--Ring2.png" Bounds="810.953333333334,95.24,111.62,25.24" Label="left -- ring2.png" />
+    <Node Id="Map--TMX地图" Bounds="188.1,95.24,113.363333333333,25.24" Label="map -- TMX地图" />
+    <Node Id="Mon--Monsters2个" Bounds="2310.55256615189,105.470453674631,143.6,25.24" Label="mon -- Monsters  2个" />
+    <Node Id="Mon--Monsters2个1" Bounds="2483.24829101563,275.859222354825,140.05,25.24" Label="mon -- Monsters 2个" />
+    <Node Id="MonMonsters--10个" Bounds="1915.06506312178,186.813876037598,147.086666666667,25.24" Label="mon Monsters -- 10个" />
+    <Node Id="OnTouchBegan" Bounds="846.180000516771,909.983136312425,161.166666666667,140.4803" Group="Expanded" Label="onTouchBegan" />
+    <Node Id="OneTa" Bounds="866.180000516771,1005.22328227964,121.166666666667,25.2399999999998" Label="oneTa -- Weapon" />
+    <Node Id="PMenu" Bounds="332.29,95.24,60.9833333333333,25.24" Label="pMenu" />
+    <Node Id="Particle" Bounds="1064.695,305.719999999999,144.04,25.24" Label="particle -- white1.png" />
+    <Node Id="Particle1" Bounds="1417.57416666667,305.719999999999,62.5633333333335,25.2399999999998" Label="particle" />
+    <Node Id="Particle2" Bounds="1383.54916666667,135.24,62.5633333333333,25.2399999999998" Label="particle" />
+    <Node Id="Particle3" Bounds="1128.51666666667,135.24,62.5633333333335,25.2399999999998" Label="particle" />
+    <Node Id="PlayEffect" Bounds="182.885,245.72,219.263333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect1" Bounds="778.831666666667,190.48,175.863333333333,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect2" Bounds="1235.79333333333,606.68,212.06,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect3" Bounds="20,606.68,426.763333333333,250.96" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect4" Bounds="584.12,1120.5001,212.06,85.2402" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect5" Bounds="20,947.64,212.06,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect6" Bounds="302.06,947.64,212.06,85.24" Group="Expanded" Label="playEffect" />
+    <Node Id="PlayEffect7" Bounds="958.026666666666,544.3001,207.766666666666,85.2402" Group="Expanded" Label="playEffect" />
+    <Node Id="PreloadEffect" Bounds="496.763333333333,566.68,411.263333333333,306.2" Group="Expanded" Label="preloadEffect" />
+    <Node Id="Public" Bounds="1037.34666666667,794.78,90,85.2402" Group="Expanded" Label="public" />
+    <Node Id="Sound/bg_music.mp3" Bounds="990.046636149089,699.540345117187,143.726666666666,25.24" Label="sound/bg_music.mp3" />
+    <Node Id="Sound/sf_button_press.mp3" Bounds="516.763333333333,772.4,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_button_press.mp31" Bounds="202.885,285.72,179.263333333333,25.24" Label="sound/sf_button_press.mp3" />
+    <Node Id="Sound/sf_creep_die_0.mp3" Bounds="715.966666666667,661.92,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
+    <Node Id="Sound/sf_creep_die_0.mp31" Bounds="1255.79333333333,646.68,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
+    <Node Id="Sound/sf_creep_die_0.mp32" Bounds="239.203333333333,701.92,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
+    <Node Id="Sound/sf_creep_die_0.mp33" Bounds="604.12,1160.5002,172.06,25.2399999999998" Label="sound/sf_creep_die_0.mp3" />
+    <Node Id="Sound/sf_creep_die_0.mp34" Bounds="40,987.64,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
+    <Node Id="Sound/sf_creep_die_0.mp35" Bounds="322.06,987.64,172.06,25.24" Label="sound/sf_creep_die_0.mp3" />
+    <Node Id="Sound/sf_game_over.mp3" Bounds="682.626666666667,606.68,167.766666666667,25.24" Label="sound/sf_game_over.mp3" />
+    <Node Id="Sound/sf_game_over.mp31" Bounds="978.026666666667,584.300354882812,167.766666666666,25.24" Label="sound/sf_game_over.mp3" />
+    <Node Id="Sound/sf_laser_beam.mp3" Bounds="516.763333333333,661.92,169.203333333333,25.24" Label="sound/sf_laser_beam.mp3" />
+    <Node Id="Sound/sf_laser_beam.mp31" Bounds="40,701.92,169.203333333333,25.24" Label="sound/sf_laser_beam.mp3" />
+    <Node Id="Sound/sf_minigun_hit.mp3" Bounds="516.763333333333,717.16,172.62,25.24" Label="sound/sf_minigun_hit.mp3" />
+    <Node Id="Sound/sf_minigun_hit.mp31" Bounds="254.143333333333,812.4,172.62,25.24" Label="sound/sf_minigun_hit.mp3" />
+    <Node Id="Sound/sf_rocket_launch.mp3" Bounds="516.763333333333,827.64,184.143333333333,25.24" Label="sound/sf_rocket_launch.mp3" />
+    <Node Id="Sound/sf_rocket_launch.mp31" Bounds="40,812.4,184.143333333333,25.24" Label="sound/sf_rocket_launch.mp3" />
+    <Node Id="Sound/sf_swish.mp3" Bounds="516.763333333333,606.68,135.863333333333,25.24" Label="sound/sf_swish.mp3" />
+    <Node Id="Sound/sf_swish.mp31" Bounds="798.831666666667,230.48,135.863333333333,25.24" Label="sound/sf_swish.mp3" />
+    <Node Id="StartSprite--Start.png" Bounds="632.678333333334,95.24,148.17,25.24" Label="startSprite -- start.png" />
+    <Node Id="StopBackgroundMusic" Bounds="970.046636149089,659.5404,183.726666666666,85.2402" Group="Expanded" Label="stopBackgroundMusic" />
+    <Node Id="TargetSprite" Bounds="423.636666666667,95.24,88.29,25.24" Label="targetSprite" />
+    <Node Id="This" Bounds="1057.34666666667,834.7801,50,25.24" Label="this" />
+    <Node Id="This1" Bounds="337.781666666667,40,50,25.24" Label="this" />
+    <Node Id="This10" Bounds="2528.27329101563,220.619222354825,50,25.24" Label="this" />
+    <Node Id="This2" Bounds="1264.715,250.48,50,25.24" Label="this" />
+    <Node Id="This3" Bounds="901.763333850104,949.983290345213,50,25.24" Label="this" />
+    <Node Id="This4" Bounds="1510.85583333333,250.48,50,25.2399999999998" Label="this" />
+    <Node Id="This5" Bounds="1476.83083333333,80,50,25.2399999999998" Label="this" />
+    <Node Id="This6" Bounds="1134.79833333333,80,50,25.2399999999998" Label="this" />
+    <Node Id="This7" Bounds="1963.60857956059,131.57376373291,50,25.24" Label="this" />
+    <Node Id="This8" Bounds="2357.35354271439,50.2304100344945,50,25.24" Label="this" />
+    <Node Id="This9" Bounds="2205.022615625,242.157422199901,50,25.24" Label="this" />
+    <Node Id="ZanTing" Bounds="162.885,205.72,399.793333333333,310.96" Group="Expanded" Label="GameLayer::zanTing" />
+    <Node Id="ZanTingItem" Bounds="317.221666666667,150.48,91.1199999999999,25.24" Label="zanTingItem" />
+    <Node Id="布局" Bounds="0,0,582.678333333333,536.68" Group="Expanded" />
+    <Node Id="特效" Bounds="1024.695,0,715.02,370.959999999999" Group="Expanded" />
   </Nodes>
   <Links>
-    <Link Source="DialogLayer::create()" Target="IsPause=true" Bounds="129.63166809082,235.720001220703,0,21" />
-    <Link Source="Director-&gt;pause()" Target="DialogLayer::create()" Bounds="129.63166809082,180.479995727539,0,21" />
+    <Link Source="AddParticle" Target="Cc--Fire1.png" Category="Contains" />
+    <Link Source="AddParticle" Target="Particle" Category="Contains" />
+    <Link Source="AddParticle" Target="This2" Category="Contains" />
+    <Link Source="AddParticle(point,Id,Time)--野怪到达终点时的特效" Target="Cc--Fire1.png1" Category="Contains" />
+    <Link Source="AddParticle(point,Id,Time)--野怪到达终点时的特效" Target="Ccp" Category="Contains" />
+    <Link Source="AddParticle(point,Id,Time)--野怪到达终点时的特效" Target="Particle1" Category="Contains" />
+    <Link Source="AddParticle(point,Id,Time)--野怪到达终点时的特效" Target="This4" Category="Contains" />
+    <Link Source="AddParticle(point,Id,Time,Angle)" Target="Particle3" Category="Contains" />
+    <Link Source="AddParticle(point,Id,Time,Angle)" Target="This6" Category="Contains" />
+    <Link Source="AddParticle1(point,Id,Time)--野怪死时的特效" Target="Ccp1" Category="Contains" />
+    <Link Source="AddParticle1(point,Id,Time)--野怪死时的特效" Target="Particle2" Category="Contains" />
+    <Link Source="AddParticle1(point,Id,Time)--野怪死时的特效" Target="This5" Category="Contains" />
+    <Link Source="Attack" Target="Bullet" Category="Contains" />
+    <Link Source="Attack" Target="Mon--Monsters2个" Category="Contains" />
+    <Link Source="Attack" Target="This8" Category="Contains" />
+    <Link Source="CutBloodOne--怪掉血" Target="Mon--Monsters2个1" Category="Contains" />
+    <Link Source="CutBloodOne--怪掉血" Target="This10" Category="Contains" />
+    <Link Source="DialogLayer::create()" Target="IsPause=true" Bounds="292.516706423937,441.441228284374,2.32030758979818E-05,20.9999902343805" />
+    <Link Source="Director-&gt;pause()" Target="DialogLayer::create()" Bounds="292.516767459087,386.201222791209,2.32030863571708E-05,21.0000054931696" />
+    <Link Source="FireBulletOne--第一个防御塔攻击" Target="Bullet1" Category="Contains" />
+    <Link Source="FireBulletOne--第一个防御塔攻击" Target="This9" Category="Contains" />
+    <Link Source="FoundMonsters" Target="MonMonsters--10个" Category="Contains" />
+    <Link Source="FoundMonsters" Target="This7" Category="Contains" />
     <Link Source="GameLayer::attack" Target="PlayEffect3" Category="Contains" />
     <Link Source="GameLayer::cutBloodOne" Target="PlayEffect4" Category="Contains" />
     <Link Source="GameLayer::fireBulletTwo" Target="PlayEffect5" Category="Contains" />
@@ -63,14 +127,25 @@
     <Link Source="GameLayer::monsterRun" Target="PlayEffect2" Category="Contains" />
     <Link Source="GameLayer::playGameCallback" Target="IsMonsterRun=true" Category="Contains" />
     <Link Source="GameLayer::playGameCallback" Target="PlayEffect1" Category="Contains" />
+    <Link Source="GameLayer::ready" Target="Left--Ring2.png" Bounds="866.763296186307,65.2403414650269,2.32030760116686E-05,20.9999902343805" />
+    <Link Source="GameLayer::ready" Target="StartSprite--Start.png" Bounds="751.823811007488,61.251589939148,89.9395223258452,31.0516145935253" />
+    <Link Source="GameLayer::ready1" Target="GameLayer::playGameCallback" Category="Contains" />
+    <Link Source="GameLayer::ready1" Target="GameLayer::ready" Category="Contains" />
+    <Link Source="GameLayer::ready1" Target="Left--Ring2.png" Category="Contains" />
+    <Link Source="GameLayer::ready1" Target="StartSprite--Start.png" Category="Contains" />
     <Link Source="GameLayer::runBullet" Target="PlayEffect6" Category="Contains" />
-    <Link Source="Id==1" Target="Sound/sf_minigun_hit.mp31" Bounds="415.573333740234,215.720001220703,0,21" />
-    <Link Source="Id==2" Target="Sound/sf_laser_beam.mp31" Bounds="413.864990234375,105.23999786377,0,21" />
-    <Link Source="Id==3" Target="Sound/sf_rocket_launch.mp31" Bounds="623.955017089844,215.720001220703,0,21" />
-    <Link Source="Id==4" Target="Sound/sf_creep_die_0.mp32" Bounds="614.496643066406,105.23999786377,0,21" />
-    <Link Source="PlayEffect" Target="Director-&gt;pause()" Bounds="129.63166809082,125.23999786377,0,21.0000076293945" />
+    <Link Source="GameLayer::this" Target="DialogLayer" Bounds="487.413350016276,270.961217298045,5.6843418860808E-14,20.999990234375" />
+    <Link Source="Id==1" Target="Sound/sf_minigun_hit.mp31" Bounds="340.453338623047,782.400024414063,0,21" />
+    <Link Source="Id==2" Target="Sound/sf_laser_beam.mp31" Bounds="124.601669311523,671.919982910156,0,21" />
+    <Link Source="Id==3" Target="Sound/sf_rocket_launch.mp31" Bounds="132.071670532227,782.400024414063,0,21" />
+    <Link Source="Id==4" Target="Sound/sf_creep_die_0.mp32" Bounds="325.233337402344,671.919982910156,0,21" />
+    <Link Source="Left--Ring2.png" Target="GameLayer::playGameCallback" Bounds="866.763277689928,120.480331699402,8.97186771453562E-06,20.999668300599" />
+    <Link Source="OnTouchBegan" Target="OneTa" Category="Contains" />
+    <Link Source="OnTouchBegan" Target="This3" Category="Contains" />
+    <Link Source="PMenu" Target="ZanTingItem" Bounds="362.781697184245,120.481206311717,0,20.999990234375" />
+    <Link Source="PlayEffect" Target="Director-&gt;pause()" Bounds="292.516735635404,330.96,3.39846976658009E-05,21.0012227912212" />
     <Link Source="PlayEffect" Target="Sound/sf_button_press.mp31" Category="Contains" />
-    <Link Source="PlayEffect1" Target="IsMonsterRun=true" Bounds="385.698333740234,466.200012207031,0,21" />
+    <Link Source="PlayEffect1" Target="IsMonsterRun=true" Bounds="866.763333333334,275.72,0,21.00034268573" />
     <Link Source="PlayEffect1" Target="Sound/sf_swish.mp31" Category="Contains" />
     <Link Source="PlayEffect2" Target="Sound/sf_creep_die_0.mp31" Category="Contains" />
     <Link Source="PlayEffect3" Target="Id==1" Category="Contains" />
@@ -85,7 +160,7 @@
     <Link Source="PlayEffect5" Target="Sound/sf_creep_die_0.mp34" Category="Contains" />
     <Link Source="PlayEffect6" Target="Sound/sf_creep_die_0.mp35" Category="Contains" />
     <Link Source="PlayEffect7" Target="Sound/sf_game_over.mp31" Category="Contains" />
-    <Link Source="PlayEffect7" Target="StopBackgroundMusic" Bounds="123.883331298828,466.200012207031,0,21" />
+    <Link Source="PlayEffect7" Target="StopBackgroundMusic" Bounds="1061.9099831523,629.5403,5.56118129679817E-06,21.0001000000003" />
     <Link Source="PreloadEffect" Target="Sound/sf_button_press.mp3" Category="Contains" />
     <Link Source="PreloadEffect" Target="Sound/sf_creep_die_0.mp3" Category="Contains" />
     <Link Source="PreloadEffect" Target="Sound/sf_game_over.mp3" Category="Contains" />
@@ -95,13 +170,42 @@
     <Link Source="PreloadEffect" Target="Sound/sf_swish.mp3" Category="Contains" />
     <Link Source="Public" Target="This" Category="Contains" />
     <Link Source="StopBackgroundMusic" Target="Sound/bg_music.mp3" Category="Contains" />
-    <Link Source="This1" Target="Gbsprite--Back.png" Bounds="370.841674804688,696.679992675781,0,21" />
+    <Link Source="This1" Target="Gbsprite--Back.png" Bounds="160.201547312054,57.6613623506397,177.580149872191,35.8011972235964" />
+    <Link Source="This1" Target="Map--TMX地图" Bounds="279.890740307391,64.0430691697499,58.4923478146297,27.3823397909643" />
+    <Link Source="This1" Target="PMenu" Bounds="362.781697184245,65.2412160773423,0,20.999990234375" />
+    <Link Source="This1" Target="TargetSprite" Bounds="386.145984708005,64.9130543120626,49.6826678964771,26.1378103754199" />
+    <Link Source="This10" Target="Mon--Monsters2个1" Bounds="2553.27319335938,245.823654174805,0,20.9752044677734" />
+    <Link Source="This2" Target="Cc--Fire1.png" Bounds="1289.71496582031,275.720001220703,0,21" />
+    <Link Source="This2" Target="Particle" Bounds="1180.13415527344,272.126129150391,84.580810546875,30.5375671386719" />
+    <Link Source="This3" Target="OneTa" Bounds="926.763305664063,975.223266601563,0,21" />
+    <Link Source="This4" Target="Cc--Fire1.png1" Bounds="1559.32971191406,275.332977294922,50.328369140625,26.2277526855469" />
+    <Link Source="This4" Target="Ccp" Bounds="1535.85583496094,275.720001220703,0,21" />
+    <Link Source="This4" Target="Particle1" Bounds="1476.32946777344,275.720001220703,39.6505126953125,25.1758117675781" />
+    <Link Source="This5" Target="Ccp1" Bounds="1501.83081054688,105.23999786377,0,21" />
+    <Link Source="This5" Target="Particle2" Bounds="1442.30444335938,105.23999786377,39.650634765625,25.1758041381836" />
+    <Link Source="This6" Target="Particle3" Bounds="1159.79833984375,105.23999786377,0,21" />
+    <Link Source="This7" Target="MonMonsters--10个" Bounds="1988.60852050781,156.813812255859,0,21" />
+    <Link Source="This8" Target="Bullet" Bounds="2287.62744140625,73.828742980957,69.8876953125,29.9497756958008" />
+    <Link Source="This8" Target="Mon--Monsters2个" Bounds="2382.32104492188,75.8183746337891,0,21.0000457763672" />
+    <Link Source="This9" Target="Bullet1" Bounds="2229.978515625,267.379211425781,0,20.994140625" />
+    <Link Source="ZanTing" Target="DialogLayer" Category="Contains" />
     <Link Source="ZanTing" Target="DialogLayer::create()" Category="Contains" />
     <Link Source="ZanTing" Target="Director-&gt;pause()" Category="Contains" />
+    <Link Source="ZanTing" Target="GameLayer::this" Category="Contains" />
     <Link Source="ZanTing" Target="IsPause=true" Category="Contains" />
     <Link Source="ZanTing" Target="PlayEffect" Category="Contains" />
+    <Link Source="ZanTingItem" Target="ZanTing" Bounds="362.781692005191,175.721196546092,3.23491417475452E-06,20.9988034539078" />
     <Link Source="布局" Target="Gbsprite--Back.png" Category="Contains" />
+    <Link Source="布局" Target="Map--TMX地图" Category="Contains" />
+    <Link Source="布局" Target="PMenu" Category="Contains" />
+    <Link Source="布局" Target="TargetSprite" Category="Contains" />
     <Link Source="布局" Target="This1" Category="Contains" />
+    <Link Source="布局" Target="ZanTing" Category="Contains" />
+    <Link Source="布局" Target="ZanTingItem" Category="Contains" />
+    <Link Source="特效" Target="AddParticle" Category="Contains" />
+    <Link Source="特效" Target="AddParticle(point,Id,Time)--野怪到达终点时的特效" Category="Contains" />
+    <Link Source="特效" Target="AddParticle(point,Id,Time,Angle)" Category="Contains" />
+    <Link Source="特效" Target="AddParticle1(point,Id,Time)--野怪死时的特效" Category="Contains" />
   </Links>
   <Categories>
     <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
