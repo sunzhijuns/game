@@ -26,6 +26,9 @@ public :
 	int count = 0;
 	int step = 0;
 	int power = 0;
+
+    const static int kPlayer = 1;
+    const static int kEnemy = 2;
 	//记录导弹发射方---1为玩家---2为敌方
 	int launchForm = 0;
 };

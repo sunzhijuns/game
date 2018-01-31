@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="BackItem" Bounds="576.08,260.96,72.8966666666665,25.24" Label="backItem" />
+    <Node Id="BsSp--Bs.png" Bounds="-8.43895108595194,546.680720214844,158.17,25.24" Label="bsSp -- gamePic/bs.png" />
+    <Node Id="GameLayer" Bounds="-28.4389510859519,396.200395605469,421.443958333333,306.200893359375" Group="Expanded" />
+    <Node Id="GameLayer::expansionRing" Bounds="460.161630249023,421.304367129059,200.143333333333,85.2402" Group="Expanded" />
+    <Node Id="GameOverbbSp--Pause/bbp.png" Bounds="614.015,150.48,215.026666666667,25.24" Label="gameOverbbSp -- pause/bbp.png" />
+    <Node Id="GameOverttSp" Bounds="607.206666666666,95.24,228.643333333333,25.24" Label="gameOverttSp -- pause/pausett.png" />
+    <Node Id="GamePausebb--Btmbb.png" Bounds="610.323333333333,40,222.41,25.24" Label="gamePausebb -- pause/btmbb.png" />
+    <Node Id="LabelWaveIndex" Bounds="262.068028240715,491.412559313594,110.936666666667,25.24" Label="labelWaveIndex" />
+    <Node Id="Map" Bounds="440.161630249023,381.304267129059,302.036666666667,200.4805" Group="Expanded" Label="map" />
+    <Node Id="Map1" Bounds="262.067904379027,436.200842285156,50,25.24" Label="map" />
+    <Node Id="Menu" Bounds="37.2666141985998,250.817908721342,52.84,25.24" Label="menu" />
+    <Node Id="Menu1" Bounds="695.108333333333,205.72,52.8400000000001,25.24" Label="menu" />
+    <Node Id="MoneyLabel" Bounds="39.9999524147456,120.337867142411,89.8833333333333,25.24" Label="moneyLabel" />
+    <Node Id="MoneySp--" Bounds="39.9999709042069,175.577873341314,91.4966666666667,25.24" Label="moneySp -- " />
+    <Node Id="Node" Bounds="-4.99398135341012E-05,-14.9028308225697,526.080005340576,366.2008" Group="Expanded" Label="GameLayer" />
+    <Node Id="Oceanbg0Sp--背景" Bounds="460.161630249023,536.526084465651,129.38,25.24" Label="oceanbg0Sp --背景" />
+    <Node Id="Oceanbg1Sp[i]" Bounds="619.541630249023,536.526084465651,102.656666666667,25.24" Label="oceanbg1Sp[i]" />
+    <Node Id="Pause--GameLayer--" Bounds="556.08,0,313.716666666667,306.2" Group="Expanded" Label="pause -- GameLayer -- " />
+    <Node Id="PauseMenu" Bounds="19.9999513466304,306.057914920245,87.3733333333333,25.24" Label="pauseMenu" />
+    <Node Id="Psq--粒子系统" Bounds="137.373293479199,250.81792119595,109.923333333333,25.24" Label="psq  -- 粒子系统" />
+    <Node Id="RadiaPT--GamePic/nextFlag1.png" Bounds="-8.43841885938951,657.161188964844,215.76,25.24" Label="radiaPT -- gamePic/nextFlag1.png" />
+    <Node Id="RestartItem" Bounds="679.951666666667,260.96,83.1533333333332,25.24" Label="restartItem" />
+    <Node Id="RingSp--BigBoom5.png" Bounds="480.161630249023,461.304467129059,160.143333333333,25.24" Label="ringSp -- bigBoom5.png" />
+    <Node Id="SdsLabel--" Bounds="123.373279761747,65.0978644468957,86.72,25.24" Label="sdsLabel -- " />
+    <Node Id="SdsSp" Bounds="39.9999547898313,65.0978644468957,53.3733333333333,25.24" Label="sdsSp" />
+    <Node Id="ShapeWaveSp--GamePic/shipWave.png" Bounds="-8.43833910678521,436.200495605469,240.506666666667,25.24" Label="shipWaveSp -- gamePic/shipwave.png" />
+    <Node Id="ShipCoolSprite[i]--船只冷却时间" Bounds="280.09329002054,120.337921695273,205.986666666667,25.24" Label="ShipCoolSprite[i] -- 船只冷却时间" />
+    <Node Id="Sp1--GamePic/nextFlag0.png" Bounds="-8.43811490431136,601.921046142578,193.07,25.24" Label="sp1 -- gamePic/nextFlag0.png" />
+    <Node Id="TcItem" Bounds="793.26,260.96,56.5366666666666,25.24" Label="tcItem" />
+    <Node Id="WaveIndex" Bounds="71.461935551418,491.440607910156,80.7066666666665,25.24" Label="waveIndex" />
+    <Node Id="WaveSp" Bounds="179.731092859361,546.680659179688,190.17,25.24" Label="waveSp -- gamePic/wave.png" />
+    <Node Id="WeaponSprite[i]" Bounds="280.093266851717,65.0979119929824,199.936666666667,25.24" Label="weaponSprite[i] -- 武器冷却时间" />
+    <Node Id="右上角" Bounds="19.9999465760963,25.0972691774303,210.093336079915,195.7204" Group="Expanded" />
+    <Node Id="左下角" Bounds="260.093279578823,25.0977659340202,245.98667582194,140.4803" Group="Expanded" />
+  </Nodes>
+  <Links>
+    <Link Source="GameLayer" Target="BsSp--Bs.png" Category="Contains" />
+    <Link Source="GameLayer" Target="LabelWaveIndex" Category="Contains" />
+    <Link Source="GameLayer" Target="Map1" Category="Contains" />
+    <Link Source="GameLayer" Target="RadiaPT--GamePic/nextFlag1.png" Category="Contains" />
+    <Link Source="GameLayer" Target="ShapeWaveSp--GamePic/shipWave.png" Category="Contains" />
+    <Link Source="GameLayer" Target="Sp1--GamePic/nextFlag0.png" Category="Contains" />
+    <Link Source="GameLayer" Target="WaveIndex" Category="Contains" />
+    <Link Source="GameLayer" Target="WaveSp" Category="Contains" />
+    <Link Source="GameLayer::expansionRing" Target="RingSp--BigBoom5.png" Category="Contains" />
+    <Link Source="GameOverbbSp--Pause/bbp.png" Target="Menu1" Bounds="721.5283203125,175.720001220703,0,21" />
+    <Link Source="GameOverttSp" Target="GameOverbbSp--Pause/bbp.png" Bounds="721.5283203125,120.480003356934,0,20.9999923706055" />
+    <Link Source="GamePausebb--Btmbb.png" Target="GameOverttSp" Bounds="721.5283203125,65.2399978637695,0,21" />
+    <Link Source="Map" Target="GameLayer::expansionRing" Category="Contains" />
+    <Link Source="Map" Target="Oceanbg0Sp--背景" Category="Contains" />
+    <Link Source="Map" Target="Oceanbg1Sp[i]" Category="Contains" />
+    <Link Source="Menu" Target="PauseMenu" Bounds="63.6866188049316,276.384552001953,0,21" />
+    <Link Source="Menu1" Target="BackItem" Bounds="645.458129882813,230.757766723633,51.5673828125,26.1337738037109" />
+    <Link Source="Menu1" Target="RestartItem" Bounds="721.5283203125,230.960006713867,0,21" />
+    <Link Source="Menu1" Target="TcItem" Bounds="744.374084472656,230.960006713867,46.4305419921875,25.6482086181641" />
+    <Link Source="Node" Target="Menu" Category="Contains" />
+    <Link Source="Node" Target="PauseMenu" Category="Contains" />
+    <Link Source="Node" Target="Psq--粒子系统" Category="Contains" />
+    <Link Source="Node" Target="右上角" Category="Contains" />
+    <Link Source="Node" Target="左下角" Category="Contains" />
+    <Link Source="Pause--GameLayer--" Target="BackItem" Category="Contains" />
+    <Link Source="Pause--GameLayer--" Target="GameOverbbSp--Pause/bbp.png" Category="Contains" />
+    <Link Source="Pause--GameLayer--" Target="GameOverttSp" Category="Contains" />
+    <Link Source="Pause--GameLayer--" Target="GamePausebb--Btmbb.png" Category="Contains" />
+    <Link Source="Pause--GameLayer--" Target="Menu1" Category="Contains" />
+    <Link Source="Pause--GameLayer--" Target="RestartItem" Category="Contains" />
+    <Link Source="Pause--GameLayer--" Target="TcItem" Category="Contains" />
+    <Link Source="ShapeWaveSp--GamePic/shipWave.png" Target="WaveIndex" Bounds="111.814498901367,461.440582275391,0,21.0000610351563" />
+    <Link Source="右上角" Target="MoneyLabel" Category="Contains" />
+    <Link Source="右上角" Target="MoneySp--" Category="Contains" />
+    <Link Source="右上角" Target="SdsLabel--" Category="Contains" />
+    <Link Source="右上角" Target="SdsSp" Category="Contains" />
+    <Link Source="左下角" Target="ShipCoolSprite[i]--船只冷却时间" Category="Contains" />
+    <Link Source="左下角" Target="WeaponSprite[i]" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

@@ -7,9 +7,15 @@ using namespace cocos2d;
 class WarShipObject :public cocos2d::Sprite
 {
 public :
+
+
 	WarShipObject(int selectNum,int shipType,Point point);
 	static WarShipObject* create(std::string path,Point point,int selectNum, int shipType);
 	Point startPoint ;
+
+	const static int kPlayer = 1;
+	const static int kEnemy = 2;
+
 	int shipType ;//我方船只-------1，敌方船只-----2
 	int shipNum ;
 	int lifeValue = 100;
@@ -17,6 +23,9 @@ public :
 	int speed = 0;
 	std::vector<Point>* warShipPath;
 	int rotation = 0;
+
+	const static int kSelected = 1;
+	const static int kNotSelected = 0;
 	//若被选中则为1，不选中则为0
 	int state = 0;
 	int itemCount = 0;

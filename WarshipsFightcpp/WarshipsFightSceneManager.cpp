@@ -54,7 +54,7 @@ void WarshipsFightSceneManager::goGameScene()
 	GameScene = Scene::create();
 	//创建一个欢迎布景对象
 	GameLayer* layer = GameLayer::create();
-	layer->wfsm = this;
+	layer->scene_manager_ = this;
 	//将欢迎布景添加到场景中
 	GameScene->addChild(layer);
 	auto ss=TransitionFade::create(0.5, GameScene);

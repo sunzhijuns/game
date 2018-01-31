@@ -380,7 +380,7 @@ void StartLayer::firstEnter()
 	//关卡数
 	UserDefault::getInstance()->setIntegerForKey(Constant::LEVELNUM.c_str(),1);
 	//初始金钱
-	UserDefault::getInstance()->setIntegerForKey(Constant::COUNTGOLD.c_str(),200);
+	UserDefault::getInstance()->setIntegerForKey(Constant::COUNTGOLD.c_str(),200);//0000000
 	//杀敌数
 	UserDefault::getInstance()->setIntegerForKey(Constant::SHADISHU.c_str(),0);
 
