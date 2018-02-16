@@ -8,30 +8,30 @@ using namespace cocos2d;
 Monsters::Monsters(){}
 
 //初始时创建怪对象的方法(参数为怪的id，及路径)
-Monsters* Monsters::create(int id,vector <Point > selfWay)//入口参数怪物的id
+Monsters* Monsters::Create(int id,vector <Point > self_way)//入口参数怪物的id
 {
 	//几种野怪的图片路径
-	std::string picTable[6] = {"pic/square.png","pic/triangle.png","pic/circle.png",
+	std::string pic_table[6] = {"pic/square.png","pic/triangle.png","pic/circle.png",
 									"pic/id_4.png","pic/id_5.png","pic/id_6.png"
 	};
 	//创建一个野怪对象
 	Monsters* temp = new Monsters();
 	//初始化野怪精灵对象
-	if (temp && temp->initWithFile(picTable[id-1].c_str()))
+	if (temp && temp->initWithFile(pic_table[id-1].c_str()))
 	{
 		//自动释放
 		temp->autorelease();
 
 		//获取当前野怪的id
-		temp->id = id;
+		temp->id_ = id;
 		//根据id设置野怪的血量
-		temp->blood =100*id;
+		temp->blood_ =100*id;
 		//根据id设置怪的最大血量值
-		temp->maxBlood=100*id;
+		temp->max_blood_=100*id;
 		//初始化路径
-		temp->way=0;
+		temp->way_=0;
 		//野怪拿到属于自己的路径
-		temp->selfWay = selfWay;
+		temp->self_way_ = self_way;
 		//创建一个表示野怪血条的精灵对象
 		Sprite* blood = Sprite::create("pic/blood.png");
 		//设置其锚点
@@ -54,29 +54,29 @@ Monsters* Monsters::create(int id,vector <Point > selfWay)//入口参数怪物�
 	}
 }
 //创建怪对象
-Monsters* Monsters::create(int id,int blood,int way,int maxBlood,vector <Point > selfWay)//入口参数怪物的id
+Monsters* Monsters::Create(int id,int blood,int way,int max_blood,vector <Point > self_way)//入口参数怪物的id
 {
-	std::string picTable[6] = {"pic/square.png","pic/triangle.png","pic/circle.png",
+	std::string pic_table[6] = {"pic/square.png","pic/triangle.png","pic/circle.png",
 									"pic/id_4.png","pic/id_5.png","pic/id_6.png"
 	};
 	//创建一个野怪精灵对象
 	Monsters* temp = new Monsters();
 	//初始化野怪精灵对象
-	if (temp && temp->initWithFile(picTable[id-1].c_str()))
+	if (temp && temp->initWithFile(pic_table[id-1].c_str()))
 	{
 		//自动释放
 		temp->autorelease();
 
 		//拿到当前怪的id
-		temp->id = id;
+		temp->id_ = id;
 		//拿到当前怪的血量
-		temp->blood = blood;
+		temp->blood_ = blood;
 		//拿到当前怪的最大血量
-		temp->maxBlood=maxBlood;
+		temp->max_blood_=max_blood;
 		//拿到当前的路径
-		temp->way=way;
+		temp->way_=way;
 		//拿到存放路径的数组
-		temp->selfWay = selfWay;
+		temp->self_way_ = self_way;
 		//创建一个表示血量的精灵对象
 		Sprite* blood1 = Sprite::create("pic/blood.png");
 		//设置锚点
@@ -100,73 +100,55 @@ Monsters* Monsters::create(int id,int blood,int way,int maxBlood,vector <Point >
 }
 
 //怪物减血的方法
-void Monsters::cutBlood(int hurt)//入口参数子弹的id
+void Monsters::CutBlood(int hurt)//入口参数子弹的id
 {
 	//被击中后当前血量值等于原血量值减去子弹的伤害值
-	this->blood-=hurt;
+	this->blood_ -= hurt;
 	//将血条设置为可见
 	(this->getChildByTag(1))->setVisible(true);
 	CCLOG("---------%p",this);
 	//剩余血量值等于当前血量值比上最大血量值
-	float scaleY = (float)blood/maxBlood;
+	float scaleY = (float)blood_/max_blood_;
 	//设置血量值
 	(this->getChildByTag(1))->setScaleY(scaleY);
 	//顺序执行怪血条可见与不可见的效果，延迟为0.5秒
 	(this->getChildByTag(1))->runAction(
 			Sequence::create(
 								DelayTime::create(0.5),
-								CallFuncN::create(CC_CALLBACK_0(Monsters::setVisibleFalse,this)),
+								CallFuncN::create(CC_CALLBACK_0(Monsters::SetVisibleFalse,this)),
 								NULL
 								)
 
 	);
-//	//创建血条精灵对象
-//	Sprite* blood = Sprite::create("pic/blood.png");
-//	//设置锚点
-//	blood->setAnchorPoint(Point(0.5,0));
-//	//初始将血条设置为不可见
-//	blood->setVisible(false);
-//	//设置血条的位置
-//	blood->setPosition(Point(0,0));
-//	//设置血条的长度
-//	blood->setScaleY(scaleY);
-//	//顺序执行删除表示血条精灵
-//	blood->runAction(
-//			Sequence::create(
-//								DelayTime::create(0.5),
-//								CallFuncN::create(CC_CALLBACK_1(Monsters::removeSprite,this)),
-//								NULL
-//								)
-//	);
 }
 
 //设置怪头顶的血条为是否可见的方法
-void Monsters::setVisibleFalse()
+void Monsters::SetVisibleFalse()
 {
 	((Sprite*)(this->getChildByTag(1)))->setVisible(false);
 }
 
 //第二种野怪运动过程中转弯时要调用的方法
-void Monsters::refresh(float angle)
+void Monsters::Refresh(float angle)
 {
 	//怪中心到左上角点向量
 	Point vector;
 	//怪的属性
-	Point orgin;
+	Point origin;
 	//怪精灵的宽
-	orgin.x=this->getContentSize().width/2;
+	origin.x = this->getContentSize().width/2;
 	//怪精灵的高
-	orgin.y=this->getContentSize().height/2;
-	vector.x=-orgin.x;
-	vector.y=-orgin.y;
+	origin.y = this->getContentSize().height/2;
+	vector.x = -origin.x;
+	vector.y = -origin.y;
 	//求向量的长度
-	float length=ccpLength(vector);
+	float length = vector.getLength();
 	//获取此向量的角度
-	float angleOrgin=ccpToAngle(vector);
+	float angle_origin = vector.getAngle();
 	//矫正血条的角度，保证怪旋转的时候血条不旋转
-	Point dirction=ccpForAngle(-angle+angleOrgin);
+	Point direction= Vec2::forAngle(-angle+angle_origin);
 	//计算血条相对屏幕的位置
-	Point position=ccpAdd(orgin,ccpMult(dirction,length));
+	Point position= origin + direction * length;
 	//设置血条的位置
 	((Sprite*)(this->getChildByTag(1)))->setPosition(position);
 	//设置血条的角度
@@ -174,7 +156,7 @@ void Monsters::refresh(float angle)
 }
 
 //删除血条精灵对象的方法
-void Monsters::removeSprite(Node*node)
+void Monsters::RemoveSprite(Node*node)
 {
 	this->removeChild(node,true);
 }

@@ -8,7 +8,7 @@ using namespace cocos2d;
 BulletSprite::BulletSprite(){}
 
 //创建子弹的方法
-BulletSprite* BulletSprite::create(const char* pic,int id)
+BulletSprite* BulletSprite::Create(const char* pic,int id)
 {
 	//声明一个指向子弹的指针temp
 	BulletSprite* temp = new BulletSprite();
@@ -17,15 +17,15 @@ BulletSprite* BulletSprite::create(const char* pic,int id)
 	//自动释放
 	temp->autorelease();
 	//拿到子弹的id
-	temp->id = id;
+	temp->id_ = id;
 	//设置初始的角度
-	temp->angle=0;
+	temp->angle_=0;
 
 	return temp;
 }
 
 //创建子弹的方法
-BulletSprite* BulletSprite::create(const char* pic,int hurt,int target)
+BulletSprite* BulletSprite::Create(const char* pic,int hurt,int target)
 {
 	//声明指向子弹的指针
 	BulletSprite* temp = new BulletSprite();
@@ -34,11 +34,11 @@ BulletSprite* BulletSprite::create(const char* pic,int hurt,int target)
 	//自动释放
 	temp->autorelease();
 	//拿到子弹的伤害值
-	temp->hurt = hurt;
+	temp->hurt_ = hurt;
 	//拿到当前的目标野怪
-	temp->target = target;
+	temp->target_ = target;
 	//设置发射子弹的角度
-	temp->angle=0;
+	temp->angle_=0;
 
 	return temp;
 }

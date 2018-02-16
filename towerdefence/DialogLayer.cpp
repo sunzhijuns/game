@@ -129,7 +129,7 @@ void DialogLayer::homeSence(Object* pSender)
 	//播放音效
 	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sound/sf_button_press.mp3");
 	//游戏暂停的标志为设为false
-	GameLayer::isPause=false;
+	GameLayer::is_pause_=false;
 	//把sprite从屏幕上删除，并把它执行的动作也删除
 	this->removeFromParentAndCleanup(true);
 	//获取Director（导演）
@@ -167,7 +167,7 @@ void DialogLayer::menuCallbackContinueGame(Object *pSender)
 {
 	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sound/sf_button_press.mp3");
 	//游戏暂停的标志位设为false
-	GameLayer::isPause=false;
+	GameLayer::is_pause_=false;
 	//把sprite从屏幕上删除，并把它执行的动作也删除
     this->removeFromParentAndCleanup(true);
     //获取CCDirector（导演）

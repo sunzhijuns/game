@@ -11,19 +11,19 @@ public:
 	//构造函数
     BulletSprite();
 	//子弹的编号，有三种1，2，3
-	int id;
+	int id_;
 	//子弹的伤害值
-	int hurt;
+	int hurt_;
 	//目标野怪
-	int target;
+	int target_;
 	//子弹的角度
-	float angle;
+	float angle_;
     //创建子弹的方法(参数为图片和子弹的id)
-    static BulletSprite* create(const char* pic,int id);
+    static BulletSprite* Create(const char* pic,int id);
     //创建子弹对象(参数为图片伤害值和目标野怪)
-    static BulletSprite* create(const char* pic,int hurt,int target);
+    static BulletSprite* Create(const char* pic,int hurt,int target);
     //怪物减血方法
-    void updata(int bulletId);
+    void Update(int bullet_id);
 
     //做好相应的初始化与释放工作
     CREATE_FUNC(BulletSprite);

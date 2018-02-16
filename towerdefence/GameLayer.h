@@ -18,47 +18,47 @@ public:
 	virtual ~GameLayer();
 	//重载的父类的初始方法
 	virtual bool init();
-	Menu* pMenu;
-	void zanTing(Object* pSender);
+	Menu* menu_;
+	void ZanTing(Ref* pSender);
 	//计算路径之前的一些容器的初始化
-	void initForCalculate();
+	void InitForCalculate();
 	//添加所有label
-	void addLabel();
+	void AddLabel();
 	//广度优先A*算法
     bool BFSAStar();
 	//初始化去过未去过的数组
-	void initVisitedArr();
+	void InitVisitedArray();
 	//释放内存
-	void freeMemory();
+	void FreeMemory();
 	//声明计算路径的方法
-    bool calculatePath();
+    bool CalculatePath();
 	//打印最后的路径
-	void printPath();
+	void PrintPath();
 	//添加防御塔菜单精灵
-	void addMenuSprite();
+	void AddMenuSprite();
 	//设置防御塔菜单精灵可见
-	void setWeaponTrue();
+	void SetWeaponTrue();
     //准备方法--画圆型
-    void ready();
+    void Ready();
     //声明怪从action数组里出来挨个走的方法
-    void run();
+    void Run();
     //创建多个怪
-    void foundMonsters();
+    void FoundMonsters();
     //出怪的方法
-    void monsterRun(Node* node);
-    void removeSpriteAdd();
+    void MonsterRun(Node* node);
+    void RemoveSpriteAdd();
     //删除精灵的方法
-    void removeSprite(Node* node);
+    void RemoveSprite(Node* node);
     //将地图格子行列号转换为对应格子的贴图坐标
-    Point fromColRowToXY(int col, int row);
+    Point FromColRowToXY(int col, int row);
     //将触控点位置转换为地图格子行列号
-    Point fromXYToColRow(int xPos, int yPos);
+    Point FromXYToColRow(int xPos, int yPos);
 	//出售防御塔的方法
-	void sellWeapon(Weapon* weapon);
+	void SellWeapon(Weapon* weapon);
 	//设置升级菜单精灵可见
-	void setUpdateTrue();
+	void SetUpdateTrue();
 	//设置升级金币
-	void setValue();
+	void SetValue();
 	//触控开始的方法
     bool onTouchBegan(Touch *pTouch, Event *pEvent);
     //触控移动的方法
@@ -66,132 +66,132 @@ public:
     //触控抬起的方法
     void onTouchEnded(Touch *pTouch, Event *pEvent);
     //出野怪时的特效
-	void addParticle(Point point,float time);
+	void AddParticle(Point point,float time);
 	//野怪到终点时的特效
-	void addParticle(Point point,int id,float time);
+	void AddParticle(Point point,int id,float time);
 	//野怪死时的特效
-	void addParticle1(Point point,int id,float time);
+	void AddParticle1(Point point,int id,float time);
 	//游戏结束时的爆炸特效
-	void addParticle(Point point,int id,float time,float angle);
-	void addParticle2(Point point,float time);
+	void AddParticle(Point point,int id,float time,float angle);
+	void AddParticle2(Point point,float time);
 	//回调方法
-	void menuCallbackItem0(Object *pSender);
+	void MenuCallbackItem0(Object *pSender);
 	//攻击怪的方法
-    void attack();
+    void Attack();
     //第一个防御塔攻击怪掉血的方法
-	void fireBulletOne(int weap,int target,float dirction,Point position,float lengthVector);
+	void FireBulletOne(int weap,int target,float direction,Point position,float length_vector);
 	//第二个防御塔攻击怪掉血的方法
-	void fireBulletTwo(int weap,int target,float dirction,Point position);
+	void FireBulletTwo(int weap,int target,float direction,Point position);
 	//第三个防御塔攻击怪掉血的方法
-	void fireBulletThree(int weap,int target,float dirction,Point position);
+	void FireBulletThree(int weap,int target,float direction,Point position);
 	//发射子弹的方法
-	void runBullet();
+	void RunBullet();
 	//怪掉血的方法
-	void cutBloodOne(Node* node);
+	void CutBloodOne(Node* node);
     //执行特效菜单的回调方法
-    void playGameCallback();
+    void PlayGameCallback();
     //游戏结束的方法
-	void loseGame();
+	void LoseGame();
 public:
-	int bulletData[10];
+	int bullet_data_[10];
 	//声明指向DrawNode类对象的指针
-	DrawNode* dn;
+	DrawNode* dn_;
 	//TMXLayer指针
-	TMXLayer* tmxLayer;
-	Point endWorld;
+	TMXLayer* tmx_layer_;
+	Point end_world_;
 	//创建动作指针
-	ProgressTimer *left;
-	Sprite* particle;
-	Sprite* bullet1;
-	Sprite* cc;
+	ProgressTimer *left_;
+	Sprite* particle_;
+	Sprite* bullet1_;
+	Sprite* cc_;
 	float TIME_MAIN;
 	//半个图块的大小（即界面中路线的偏移量）此处要有一个调整值（参数为瓦片图片的半边宽，瓦片图片的半边高）
-	Point trans;
+	Point transform_;
 	//当前分数的label
-	LabelTTF *scoreL;
+	LabelTTF *score_label_;
 	//当前回合数的label
-	LabelTTF *passL;
+	LabelTTF *pass_label_;
 	//当前金钱
-	LabelTTF *moneyL;
+	LabelTTF *money_label_;
 	//当前生命数
-	LabelTTF *tenL;
+	LabelTTF *ten_label_;
 	//显示升级武器所需金钱的label
-	LabelTTF *uMoneyL;
+	LabelTTF *update_money_label_;
 	//显示出售武器获得的金钱的label
-	LabelTTF *sMoneyL;
+	LabelTTF *sell_money_label_;
 	//存放怪的数组
-	Array* arrMon;
+	Array* monsters_;
 	//存放防御塔
-	Array* arrWeap;
+	Array* weapons_;
 	//存放菜单防御塔精灵
-	Array* arrMenu;
+	Array* menus_;
 	//存放action动作
-	Array* arrAction;
+	Array* actions_;
 	//存放跟踪
-	Array* arrBullet;
+	Array* bullets_;
 	//存放升级的菜单按钮精灵
-	Array* arrSellUpdate;
+	Array* sell_update_menus_;
 	//设置世界坐标系
-	Point startWorld;
+	Point start_world_;
 	//怪运动标志位
-	bool isMonsterRun ;
+	bool is_monster_run_;
 	//创建怪的标志位
-	bool isfoundMonster;
+	bool is_found_monster_;
 	//场景管理制指针
-	GameSceneManager* man;
+	GameSceneManager* scene_manager_;
 	//算法计算完毕的标志位
-	bool isCaulateOver;
+	bool is_caulate_over_;
 	//声明表示生命值的对象
-	int ten;
+	int ten_;
 	//玩家的金币
-	int money;
+	int money_;
 	//开始标志精灵
-	Sprite* startSprite;
+	Sprite* start_sprite_;
 	//野怪精灵对象
-	Sprite *ygSprite;
+	Sprite *ye_guai_sprite_;
 	//目标精灵
-	Sprite* targetSprite;
+	Sprite* target_sprite_;
 	//地图的row
-	int row;
+	int row_;
 	//地图的col
-	int col;
+	int col_;
 	//以竖放向来看（从左至右，从上至下）以下为动态二维数组的创建
-	int** MAP_DATA;
+	int** map_data_;
 	//存放路径的数组
-	vector <Point > way;
-	vector <int> bulletArray;
+	vector <Point > way_;
+	vector <int> bullet_array_;
 	//记录路径长度
-	int** length;
+	int** length_;
 	//广度优先所用队列
-	queue<int(*)[2]>* myQueue;
+	queue<int(*)[2]>* my_queue_;
 	//结果路径记录
-	map<string, int(*)[2]>* hm;
+	map<string, int(*)[2]>* hm_;
 	//typedef自定义类型
 	typedef vector<int(*)[2]>* INTPVECTORP;
 	//第一次点击在菜单位置标志位
-	bool touchMove = false;
+	bool is_touch_move_ = false;
 	//在touchEnd里是否移除防御塔的标志位
-	bool removeWeap;
+	bool is_remove_weap_;
 	//多少批怪计数
-	int pass;
+	int pass_;
 	//当前总得分数
-	int score;
+	int score_;
 	//升级的武器
-	Weapon* updateWeapon;
+	Weapon* update_weapon_;
 	//武器升级的标志位
-	bool WeaponUpdate;
+	bool is_weapon_update_;
 	//声明游戏结束的标志位
-	bool GameOver;
+	bool is_game_over_;
 	//暂停游戏的标志位
-	static bool isPause;
+	static bool is_pause_;
 
 	//声明创建防御塔时的光圈精灵对象
-	Weapon* trSprite;
+	Weapon* tr_sprite_;
 	//声明四个菜单防御塔的精灵对象
-	Weapon *onePlayer;
-	Weapon *twoPlayer;
-	Weapon *threePlayer;
-	Weapon *fourPlayer;
+	Weapon *one_player_;
+	Weapon *two_player_;
+	Weapon *three_player_;
+	Weapon *four_player_;
 
 	CREATE_FUNC(GameLayer);
 };
