@@ -8,7 +8,10 @@
 using namespace cocos2d;
 
 //构造函数
-Weapon::Weapon(){}
+Weapon::Weapon()
+	:_scope(NULL){
+
+}
 
 //创建四个防御塔菜单精灵时调用的创建方法
 Weapon* Weapon::Create(const char* pic,int id)//入口参数武器的id
@@ -97,19 +100,16 @@ Weapon* Weapon::Create(int id)
 	temp->hurt_=hurt_table[id-1];
 	//根据id设置各防御塔的初始攻击范围
 	temp->confines_=confines_table[id-1];
-	//创建一个表示选中防御塔时显示效果的精灵对象
+	//选中防御塔时显示效果
 	Sprite* scope= Sprite::create("pic/ring.png");
 	//根据当前防御塔的攻击范围来设置该效果精灵的尺寸
 	float scale=(float)confines_table[id-1]/(scope->getContentSize().width/2);
 	scope->setScale(scale);
-	//设置该精灵对象的位置
 	scope->setPosition(Point(24,24));
-	//将该精灵对象添加到布景中
 	temp->addChild(scope,4,1);
-	//设置该精灵对象初始为不可见
 	scope->setVisible(false);
-	//设置升级防御塔的标志位为false
 	temp->is_update_mark_=false;
+	temp->_scope = scope;
 
 	return temp;
 }

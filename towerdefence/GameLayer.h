@@ -11,6 +11,19 @@ using namespace cocos2d;
 
 class GameLayer : public cocos2d::Layer
 {
+private:
+
+
+private:
+
+    void MapDataInit(int row, int col, TMXLayer* tmx_layer, TMXTiledMap* map);
+
+    //添加防御塔菜单精灵
+    void InitWeaponMenus();
+    void InitZanTingMenu();
+    void InitArray();
+    void InitLabel();
+    void InitValues();
 public:
 	//构造函数
 	GameLayer();
@@ -18,47 +31,37 @@ public:
 	virtual ~GameLayer();
 	//重载的父类的初始方法
 	virtual bool init();
-	Menu* menu_;
 	void ZanTing(Ref* pSender);
-	//计算路径之前的一些容器的初始化
-	void InitForCalculate();
-	//添加所有label
-	void AddLabel();
+
 	//广度优先A*算法
     bool BFSAStar();
-	//初始化去过未去过的数组
-	void InitVisitedArray();
+
 	//释放内存
 	void FreeMemory();
 	//声明计算路径的方法
     bool CalculatePath();
 	//打印最后的路径
 	void PrintPath();
-	//添加防御塔菜单精灵
-	void AddMenuSprite();
+
 	//设置防御塔菜单精灵可见
-	void SetWeaponTrue();
+	void ShowWeaponMenus();
     //准备方法--画圆型
     void Ready();
     //声明怪从action数组里出来挨个走的方法
     void Run();
     //创建多个怪
-    void FoundMonsters();
+    void CreateMonsters();
     //出怪的方法
     void MonsterRun(Node* node);
     void RemoveSpriteAdd();
-    //删除精灵的方法
-    void RemoveSprite(Node* node);
     //将地图格子行列号转换为对应格子的贴图坐标
-    Point FromColRowToXY(int col, int row);
+    Point FromColRowToXY(Vec2& col_row);
     //将触控点位置转换为地图格子行列号
-    Point FromXYToColRow(int xPos, int yPos);
+    Point FromXYToColRow(Vec2& pos);
 	//出售防御塔的方法
 	void SellWeapon(Weapon* weapon);
-	//设置升级菜单精灵可见
-	void SetUpdateTrue();
-	//设置升级金币
-	void SetValue();
+	void ShowSellUpdateMenus();
+	void UpdateSellUpdateLabel();
 	//触控开始的方法
     bool onTouchBegan(Touch *pTouch, Event *pEvent);
     //触控移动的方法
@@ -99,8 +102,6 @@ public:
 	//TMXLayer指针
 	TMXLayer* tmx_layer_;
 	Point end_world_;
-	//创建动作指针
-	ProgressTimer *left_;
 	Sprite* particle_;
 	Sprite* bullet1_;
 	Sprite* cc_;
@@ -124,21 +125,18 @@ public:
 	//存放防御塔
 	Array* weapons_;
 	//存放菜单防御塔精灵
-	Array* menus_;
+	Array* menus_weapon_;
 	//存放action动作
 	Array* actions_;
 	//存放跟踪
 	Array* bullets_;
-	//存放升级的菜单按钮精灵
-	Array* sell_update_menus_;
+
 	//设置世界坐标系
 	Point start_world_;
 	//怪运动标志位
 	bool is_monster_run_;
 	//创建怪的标志位
-	bool is_found_monster_;
-	//场景管理制指针
-	GameSceneManager* scene_manager_;
+	bool is_monster_created_;
 	//算法计算完毕的标志位
 	bool is_caulate_over_;
 	//声明表示生命值的对象
@@ -147,8 +145,6 @@ public:
 	int money_;
 	//开始标志精灵
 	Sprite* start_sprite_;
-	//野怪精灵对象
-	Sprite *ye_guai_sprite_;
 	//目标精灵
 	Sprite* target_sprite_;
 	//地图的row
@@ -159,15 +155,7 @@ public:
 	int** map_data_;
 	//存放路径的数组
 	vector <Point > way_;
-	vector <int> bullet_array_;
-	//记录路径长度
-	int** length_;
-	//广度优先所用队列
-	queue<int(*)[2]>* my_queue_;
-	//结果路径记录
-	map<string, int(*)[2]>* hm_;
-	//typedef自定义类型
-	typedef vector<int(*)[2]>* INTPVECTORP;
+
 	//第一次点击在菜单位置标志位
 	bool is_touch_move_ = false;
 	//在touchEnd里是否移除防御塔的标志位
@@ -185,13 +173,14 @@ public:
 	//暂停游戏的标志位
 	static bool is_pause_;
 
-	//声明创建防御塔时的光圈精灵对象
-	Weapon* tr_sprite_;
 	//声明四个菜单防御塔的精灵对象
 	Weapon *one_player_;
 	Weapon *two_player_;
 	Weapon *three_player_;
 	Weapon *four_player_;
+
+    Sprite* update_sprite_;
+    Sprite* sell_sprite_;
 
 	CREATE_FUNC(GameLayer);
 };
